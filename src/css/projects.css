@@ -1,0 +1,111 @@
+/*
+  PROJECTS.CSS — Página de projetos
+*/
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-xl);
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg-card);
+  border: var(--border-width) solid var(--color-border);
+  transition: border-color var(--transition-fast);
+}
+
+.project-card:hover {
+  border-color: var(--color-border-accent);
+}
+
+.project-image {
+  height: 210px;
+  overflow: hidden;
+  border-bottom: var(--border-width) solid var(--color-border);
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.03);
+}
+
+.project-content {
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-tag {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--color-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.project-content h3 {
+  font-size: var(--fs-xl);
+  margin-bottom: var(--space-xs);
+}
+
+.project-content p {
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+  margin-bottom: var(--space-lg);
+}
+
+.project-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.project-tech span {
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+  border: var(--border-width) solid var(--color-border);
+  padding: 0.2rem 0.5rem;
+}
+
+.project-actions {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.btn-project {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border: var(--border-width) solid var(--color-border);
+  color: var(--color-text-muted);
+}
+
+.btn-project:hover {
+  color: var(--color-text);
+  border-color: var(--color-primary);
+}
+
+@media (max-width: 800px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ====== MEU CSS DOS CARDS DE PROJETO ====== */

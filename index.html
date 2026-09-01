@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IBrunooDev | Front-End</title>
+  <link rel="icon" type="image/x-icon" href="src/img/Icon-BrunoH-V2.png" />
+  <meta name="description"
+    content="Portfólio de Bruno Henrique, desenvolvedor front-end em formação. Interfaces claras, código organizado e projetos reais." />
+  <link rel="stylesheet" href="src/css/root.css" />
+  <link rel="stylesheet" href="src/css/global.css" />
+  <link rel="stylesheet" href="src/css/navbar.css" />
+  <link rel="stylesheet" href="src/css/home.css" />
+  <link rel="stylesheet" href="src/css/terminal.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body data-page="inicio">
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">DEV</span>
+        <span class="brand-name">Bruno Henrique<span>.dev</span></span>
+      </a>
+      <nav class="site-nav" id="site-nav">
+        <a href="index.html" data-nav="inicio">Início</a>
+        <a href="sobre.html" data-nav="sobre">Sobre</a>
+        <a href="carreira.html" data-nav="carreira">Carreira</a>
+        <a href="projetos.html" data-nav="projetos">Projetos</a>
+        <a href="skills.html" data-nav="skills">Skills</a>
+        <a href="certificados.html" data-nav="certificados">Certificados</a>
+        <a href="contato.html" data-nav="contato">Contato</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy reveal">
+        <p class="hero-meta"><span>Front-End</span> · Osasco / SP · Disponível para Oportunidades</p>
+        <h1>Bruno Henrique</h1>
+        <p class="hero-role">Desenvolvedor Front-End</p>
+        <p class="hero-text">
+          Desenvolvedor Front-End em formação, com foco no desenvolvimento de interfaces modernas, responsivas e
+          intuitivas. Possuo conhecimentos em HTML, CSS e JavaScript, aplicando boas práticas de desenvolvimento,
+          responsividade, organização de código e experiência do usuário (UX/UI).
+          <br /><br />
+          Busco minha primeira oportunidade profissional na área de tecnologia para aplicar meus conhecimentos em
+          projetos reais, adquirir experiência prática e evoluir continuamente como desenvolvedor.
+        </p>
+
+        <div class="hero-actions">
+          <a href="contato.html" class="btn btn-primary">Vamos conversar</a>
+          <a href="src/docs/(CV) - Bruno Dev Novo.pdf" target="_blank" class="btn btn-secondary">Baixar currículo</a>
+        </div>
+        <br /><br />
+      </div>
+      <div class="hero-visual reveal">
+        <div class="hero-frame">
+          <img src="src/img/Icon-BrunoH-V2.png" alt="Bruno Henrique" />
+          <span class="hero-caption">IBrunooDev</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="status-strip">
+      <div class="status-item">
+        <span class="status-label">Foco</span>
+        <span class="status-value">Interfaces e front-end</span>
+      </div>
+      <div class="status-item">
+        <span class="status-label">Base</span>
+        <span class="status-value">HTML, CSS e JavaScript</span>
+      </div>
+      <div class="status-item">
+        <span class="status-label">Estudo atual</span>
+        <span class="status-value">React, Next.js e TypeScript</span>
+      </div>
+    </div>
+
+    <section class="home-block container">
+      <div class="home-block-head reveal">
+        <div>
+          <p class="page-kicker">Seleção</p>
+          <h2 class="section-title">Alguns trabalhos</h2>
+        </div>
+        <p>Desenvolvimento de landing pages e sites responsivos com HTML, CSS e JavaScript. Confira outros projetos e
+          tecnologias na seção de Projetos.</p>
+      </div>
+      <div class="featured-grid">
+        <article class="featured-card reveal">
+          <img src="src/img/Img-Projeto-Legacy.jpg" alt="Legacy RP MTA" />
+          <div class="featured-body">
+            <h3>Legacy RP MTA</h3>
+            <p>Landing page para o segmento de games (MTA), desenvolvida com foco em interface responsiva, experiência
+              do usuário e apresentação de funcionalidades e scripts.</p>
+            <a class="featured-link" href="projetos.html">Ver projetos</a>
+          </div>
+        </article>
+        <article class="featured-card reveal">
+          <img src="src/img/Img-Projeto-SkyPage.jpg" alt="SkyPage" />
+          <div class="featured-body">
+            <h3>SkyPage</h3>
+            <p>Site corporativo simulado, com atenção a estrutura, ritmo visual e carregamento.</p>
+            <a class="featured-link" href="https://skypagee.netlify.app/" target="_blank" rel="noopener">Abrir o
+              site</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="home-block container">
+      <div class="console-intro">
+        <div class="reveal">
+          <p class="page-kicker">Console</p>
+          <h2>Um terminal, só que como ferramenta</h2>
+          <p>
+            A navegação principal está no menu. O console oferece acesso rápido a informações e páginas por meio de
+            comandos.
+          </p>
+        </div>
+        <div class="terminal reveal">
+          <div class="terminal-bar">
+            <div class="terminal-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+            <span class="terminal-title">root@ibrunoodev — bash</span>
+          </div>
+          <div class="terminal-screen" id="terminal-screen">
+            <div class="terminal-output">
+              <div class="terminal-line terminal-welcome">sessão iniciada.</div>
+              <div class="terminal-line terminal-muted">digite help para ver os comandos.</div>
+            </div>
+            <div class="terminal-row">
+              <span class="terminal-prompt">root@ibrunoodev:~$</span>
+              <input id="terminal-input" class="terminal-input" type="text" autocomplete="off" placeholder="whoami" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="social-links">
+        <p>&copy; 2026 Bruno Henrique. Todos os direitos reservados.</p>
+        <a href="https://www.linkedin.com/in/brunocarus/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/IBrunooDev" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.instagram.com/ibrunoodev/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="src/js/navbar.js"></script>
+  <script src="src/js/main.js"></script>
+  <script src="src/js/terminal.js"></script>
+</body>
+
+</html>

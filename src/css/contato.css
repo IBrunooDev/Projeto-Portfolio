@@ -1,0 +1,52 @@
+/*
+  CONTATO.CSS
+*/
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+
+.contact-copy h1 {
+  font-size: var(--fs-4xl);
+  letter-spacing: -0.04em;
+  line-height: var(--lh-tight);
+  margin-bottom: var(--space-lg);
+}
+
+.contact-copy p {
+  color: var(--color-text-muted);
+  max-width: 32rem;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  border-top: var(--border-width) solid var(--color-border);
+}
+
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-lg) 0;
+  border-bottom: var(--border-width) solid var(--color-border);
+  color: var(--color-text);
+}
+
+.contact-item:hover {
+  color: var(--color-primary);
+}
+
+.contact-item small {
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+}
+
+@media (max-width: 800px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}

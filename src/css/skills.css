@@ -1,0 +1,49 @@
+/*
+  SKILLS.CSS
+*/
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: var(--border-width) solid var(--color-border);
+}
+
+.skill-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  border-right: var(--border-width) solid var(--color-border);
+  border-bottom: var(--border-width) solid var(--color-border);
+}
+
+.skill-card:nth-child(3n) {
+  border-right: none;
+}
+
+.skill-card i {
+  font-size: 1.6rem;
+}
+
+.skill-card span {
+  font-weight: 500;
+}
+
+.devicon-github-plain,
+.devicon-nextjs-plain {
+  color: var(--color-text);
+}
+
+@media (max-width: 800px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skill-card:nth-child(3n) {
+    border-right: var(--border-width) solid var(--color-border);
+  }
+
+  .skill-card:nth-child(2n) {
+    border-right: none;
+  }
+}

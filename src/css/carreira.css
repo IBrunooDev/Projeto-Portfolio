@@ -1,0 +1,57 @@
+/*
+  CARREIRA.CSS
+*/
+
+.timeline {
+  position: relative;
+  max-width: var(--container-sm);
+  margin-left: 0.75rem;
+  padding-left: var(--space-xl);
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  background: var(--color-border-strong);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: var(--space-xl);
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: calc(-1 * var(--space-xl) - 3px);
+  top: 8px;
+  width: 7px;
+  height: 7px;
+  background: var(--color-primary);
+}
+
+.timeline-date {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--color-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.timeline-content h3 {
+  font-size: var(--fs-lg);
+  margin-bottom: var(--space-2xs);
+}
+
+.company {
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.timeline-content p {
+  color: var(--color-text-muted);
+}

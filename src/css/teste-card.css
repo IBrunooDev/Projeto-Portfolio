@@ -1,0 +1,535 @@
+/* ========================================
+   RESET
+======================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========================================
+   ROOT / CORES
+======================================== */
+
+:root {
+  --background: #080c11;
+
+  --background-secondary: #0d131b;
+
+  --card: #111820;
+
+  --card-hover: #151e27;
+
+  --border: #27313c;
+
+  --border-light: #34414d;
+
+  --text: #e4e8ec;
+
+  --text-secondary: #7d8994;
+
+  --primary: #4f8584;
+
+  --primary-hover: #639b99;
+
+  --grid: rgba(255, 255, 255, 0.025);
+}
+
+/* ========================================
+   BODY
+======================================== */
+
+body {
+  min-height: 100vh;
+
+  background-color: var(--background);
+
+  color: var(--text);
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ========================================
+   SEÇÃO
+======================================== */
+
+.projects-section {
+  width: 100%;
+
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  padding: 70px 25px;
+
+  position: relative;
+}
+
+/* ========================================
+   GRID DE FUNDO
+======================================== */
+
+
+/* ========================================
+   LINHA SUPERIOR
+======================================== */
+
+.top-line {
+  width: 100%;
+
+  height: 1px;
+
+  background: var(--border);
+
+  margin-bottom: 45px;
+
+  position: relative;
+}
+
+.top-line::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  top: -1px;
+
+  width: 110px;
+
+  height: 2px;
+
+  background: var(--primary);
+}
+
+/* ========================================
+   CABEÇALHO
+======================================== */
+
+.section-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-end;
+
+  gap: 30px;
+
+  margin-bottom: 45px;
+
+  position: relative;
+}
+
+.section-label {
+  color: var(--primary);
+
+  font-size: 11px;
+
+  letter-spacing: 3px;
+
+  font-weight: bold;
+}
+
+.section-header h1 {
+  font-size: 34px;
+
+  letter-spacing: 1px;
+
+  margin-top: 12px;
+}
+
+.section-header p {
+  color: var(--text-secondary);
+
+  font-size: 14px;
+
+  margin-top: 12px;
+
+  max-width: 550px;
+
+  line-height: 1.6;
+}
+
+/* ========================================
+   CONTADOR
+======================================== */
+
+.project-count {
+  min-width: 110px;
+
+  padding: 15px;
+
+  border-left: 1px solid var(--primary);
+
+  background: var(--background-secondary);
+
+  text-align: right;
+}
+
+.project-count span {
+  display: block;
+
+  font-size: 10px;
+
+  color: var(--text-secondary);
+
+  letter-spacing: 2px;
+}
+
+.project-count strong {
+  font-size: 28px;
+
+  color: var(--primary);
+}
+
+/* ========================================
+   CONTAINER FLEX
+======================================== */
+
+.projects-container {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 18px;
+
+  position: relative;
+}
+
+/* ========================================
+   CARD
+======================================== */
+
+.project-card {
+  width: calc(33.333% - 12px);
+
+  background: var(--card);
+
+  border: 1px solid var(--border);
+
+  position: relative;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease;
+}
+
+/* ========================================
+   HOVER
+======================================== */
+
+.project-card:hover {
+  transform: translateY(-6px);
+
+  background: var(--card-hover);
+
+  border-color: var(--primary);
+}
+
+/* ========================================
+   CANTOS FUTURISTAS
+======================================== */
+
+.card-corner {
+  position: absolute;
+
+  width: 16px;
+
+  height: 16px;
+
+  z-index: 5;
+}
+
+.corner-top-left {
+  top: -1px;
+
+  left: -1px;
+
+  border-top: 2px solid var(--primary);
+
+  border-left: 2px solid var(--primary);
+}
+
+.corner-top-right {
+  top: -1px;
+
+  right: -1px;
+
+  border-top: 2px solid var(--primary);
+
+  border-right: 2px solid var(--primary);
+}
+
+/* ========================================
+   IMAGEM
+======================================== */
+
+.project-image {
+  width: 100%;
+
+  height: 190px;
+
+  background: #0a0f15;
+
+  overflow: hidden;
+
+  position: relative;
+
+  border-bottom: 1px solid var(--border);
+}
+
+/* ========================================
+   IMAGEM
+======================================== */
+
+.project-image img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  opacity: 0.8;
+
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+
+  opacity: 1;
+}
+
+/* ========================================
+   OVERLAY DA IMAGEM
+======================================== */
+
+.project-image::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(to top, rgba(8, 12, 17, 0.8), transparent);
+}
+
+/* ========================================
+   NÚMERO DO PROJETO
+======================================== */
+
+.image-overlay {
+  position: absolute;
+
+  right: 12px;
+
+  bottom: 10px;
+
+  z-index: 2;
+}
+
+.image-overlay span {
+  color: var(--primary);
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+}
+
+/* ========================================
+   CONTEÚDO
+======================================== */
+
+.project-content {
+  padding: 22px;
+}
+
+/* ========================================
+   NÚMERO
+======================================== */
+
+.project-number {
+  color: var(--primary);
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+}
+
+/* ========================================
+   TÍTULO
+======================================== */
+
+.project-content h2 {
+  font-size: 19px;
+
+  margin-top: 10px;
+
+  margin-bottom: 12px;
+
+  color: var(--text);
+}
+
+/* ========================================
+   DESCRIÇÃO
+======================================== */
+
+.project-content p {
+  color: var(--text-secondary);
+
+  font-size: 13px;
+
+  line-height: 1.6;
+
+  min-height: 65px;
+}
+
+/* ========================================
+   TECNOLOGIAS
+======================================== */
+
+.technologies {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-top: 18px;
+}
+
+.technologies span {
+  padding: 6px 9px;
+
+  font-size: 10px;
+
+  letter-spacing: 1px;
+
+  color: var(--primary);
+
+  background: #0b1016;
+
+  border: 1px solid var(--border);
+}
+
+/* ========================================
+   BOTÕES
+======================================== */
+
+.project-buttons {
+  display: flex;
+
+  gap: 10px;
+
+  margin-top: 22px;
+}
+
+/* ========================================
+   CONFIGURAÇÃO GERAL DOS BOTÕES
+======================================== */
+
+.project-buttons a {
+  flex: 1;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  min-height: 42px;
+
+  text-decoration: none;
+
+  font-size: 10px;
+
+  letter-spacing: 1px;
+
+  font-weight: bold;
+
+  transition: 0.3s ease;
+}
+
+/* ========================================
+   BOTÃO PROJETO
+======================================== */
+
+.btn-project {
+  background: var(--primary);
+
+  color: #ffffff;
+}
+
+.btn-project:hover {
+  background: var(--primary-hover);
+
+  transform: translateY(-2px);
+}
+
+/* ========================================
+   BOTÃO GITHUB
+======================================== */
+
+.btn-github {
+  color: var(--text);
+
+  background: transparent;
+
+  border: 1px solid var(--border-light);
+}
+
+.btn-github:hover {
+  color: var(--primary);
+
+  border-color: var(--primary);
+}
+
+/* ========================================
+   RESPONSIVO TABLET
+======================================== */
+
+@media (max-width: 1000px) {
+  .project-card {
+    width: calc(50% - 9px);
+  }
+}
+
+/* ========================================
+   RESPONSIVO MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+  .projects-section {
+    padding: 45px 18px;
+  }
+
+  .section-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .project-count {
+    width: 100%;
+
+    text-align: left;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .section-header h1 {
+    font-size: 27px;
+  }
+
+  .project-image {
+    height: 210px;
+  }
+}
