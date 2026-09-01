@@ -2,9 +2,7 @@
 
 O meu portfólio profissional, com design moderno e um terminal de navegação **MUITO TOP**!
 ---
-<img width="1365" height="596" alt="image" src="https://github.com/user-attachments/assets/86050124-3c5e-4b33-a37c-1beace1fda1d" />
-
-
+<img width="1365" height="594" alt="image" src="https://github.com/user-attachments/assets/aeb442ea-f6a7-4cda-ba13-a0ea12d10b99" />
 
 ## 🔗 Acesse Agora
 
