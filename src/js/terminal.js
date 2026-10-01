@@ -1,4 +1,4 @@
-/**
+ /**
  * terminal.js — Console interativo (recurso, não navegação principal)
  */
 

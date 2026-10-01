@@ -4,8 +4,7 @@ Portfólio profissional de **Bruno Henrique**, desenvolvedor Front-End em forma�
 
 O site possui um visual **dark, moderno e responsivo**, com detalhes inspirados em interfaces de terminal, animações de entrada, player de música e navegação por várias páginas.
 
-<img width="1365" height="598" alt="image" src="https://github.com/user-attachments/assets/df046c2b-9da8-4ac0-a2e4-84527714af77" />
-
+![Prévia do portfólio](https://github.com/user-attachments/assets/86050124-3c5e-4b33-a37c-1beace1fda1d)
 
 ## Acesse o projeto
 
@@ -73,7 +72,6 @@ O terminal da página inicial também pode ser utilizado para navegar pelo portf
 | Legacy RP MTA | Landing page voltada ao segmento de games e apresentação de funcionalidades e scripts | HTML, CSS e JavaScript | [Ver projeto](https://legacymta.netlify.app/) | [GitHub](https://github.com/IBrunooDev/Projeto-Legacy) |
 | Limpeza de Casa | Landing page responsiva para uma empresa de limpeza | HTML, CSS e JavaScript | [Ver projeto](https://limpezaa.netlify.app/) | [GitHub](https://github.com/IBrunooDev/Projeto-Limpeza) |
 | F1Dev | Landing page para um campeonato de Fórmula 1 | HTML, CSS e JavaScript | [Ver projeto](https://f1dev.netlify.app/) | [GitHub](https://github.com/IBrunooDev/Projeto-F1) |
-| RIFA.GG | Site Completo RIFAS | HTML, CSS e JavaScript, TypeScript, Next.js, PostgreSQL, Vercel, Supabase, AI | [Ver projeto](https://rifa-gg.vercel.app/) | [GitHub](https://github.com/IBrunooDev/Projeto-RIFA.GG) |
 
 ## Estrutura do projeto
 
