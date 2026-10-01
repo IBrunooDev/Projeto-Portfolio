@@ -73,6 +73,7 @@ O terminal da página inicial também pode ser utilizado para navegar pelo portf
 | Legacy RP MTA | Landing page voltada ao segmento de games e apresentação de funcionalidades e scripts | HTML, CSS e JavaScript | [Ver projeto](https://legacymta.netlify.app/) | [GitHub](https://github.com/IBrunooDev/Projeto-Legacy) |
 | Limpeza de Casa | Landing page responsiva para uma empresa de limpeza | HTML, CSS e JavaScript | [Ver projeto](https://limpezaa.netlify.app/) | [GitHub](https://github.com/IBrunooDev/Projeto-Limpeza) |
 | F1Dev | Landing page para um campeonato de Fórmula 1 | HTML, CSS e JavaScript | [Ver projeto](https://f1dev.netlify.app/) | [GitHub](https://github.com/IBrunooDev/Projeto-F1) |
+| RIFA.GG | Site Completo RIFAS | HTML, CSS e JavaScript, TypeScript, Next.js, PostgreSQL, Vercel, Supabase, AI | [Ver projeto](https://rifa-gg.vercel.app/) | [GitHub](https://github.com/IBrunooDev/Projeto-RIFA.GG) |
 
 ## Estrutura do projeto
 
