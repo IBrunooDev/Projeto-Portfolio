@@ -4,8 +4,7 @@ Portfólio profissional de **Bruno Henrique**, desenvolvedor Front-End em forma�
 
 O site possui um visual **dark, moderno e responsivo**, com detalhes inspirados em interfaces de terminal, animações de entrada, player de música e navegação por várias páginas.
 
-<img width="1365" height="595" alt="image" src="https://github.com/user-attachments/assets/ee51ab80-3b03-4be7-8516-099ec0eaf4dc" />
-
+![Prévia do portfólio](https://github.com/user-attachments/assets/86050124-3c5e-4b33-a37c-1beace1fda1d)
 
 ## Acesse o projeto
 
@@ -73,9 +72,6 @@ O terminal da página inicial também pode ser utilizado para navegar pelo portf
 | Legacy RP MTA | Landing page voltada ao segmento de games e apresentação de funcionalidades e scripts | HTML, CSS e JavaScript | [Ver projeto](https://legacymta.netlify.app/) | [GitHub](https://github.com/IBrunooDev/Projeto-Legacy) |
 | Limpeza de Casa | Landing page responsiva para uma empresa de limpeza | HTML, CSS e JavaScript | [Ver projeto](https://limpezaa.netlify.app/) | [GitHub](https://github.com/IBrunooDev/Projeto-Limpeza) |
 | F1Dev | Landing page para um campeonato de Fórmula 1 | HTML, CSS e JavaScript | [Ver projeto](https://f1dev.netlify.app/) | [GitHub](https://github.com/IBrunooDev/Projeto-F1) |
-| RIFA.GG | Site Completo para Gerencia RIFA | Next.js, TypeScript  e JavaScript, PostgreSQL  | [Ver projeto](https://rifa-gg.vercel.app/) | [GitHub](https://github.com/IBrunooDev/Projeto-RIFA.GG) |
-| BOT Discord | BOT Completo para Gerencia RIFA | Node.js 20+, TypeScript  e Discord.js 14, Supabase, PostgreSQL, Zod, dotenv | [GitHub](https://github.com/IBrunooDev/Projeto-BOT) |
-| Pedido Namoro | Landing page Projeto Love é uma experiência web interativa e personalizada, criada para apresentar momentos especiais de forma visual e envolvente. | HTML, CSS e JavaScript | [Ver projeto](https://projeto-lovee.netlify.app/) | [GitHub](https://github.com/IBrunooDev/Projeto-Pedido) |
 
 ## Estrutura do projeto
 
@@ -145,13 +141,8 @@ Para adicionar um novo certificado:
 2. coloque o PDF em `src/docs/certificates/`;
 3. adicione as informações do certificado ao array `CERTIFICATES`, localizado em `src/js/certificates.js`.
 
+## Autor
 
-- ## :link: Links
+Desenvolvido com dedicação por **Bruno Henrique — IBrunooDev**.
 
-- [GitHub](https://github.com/IBrunooDev)
-- [LinkedIn](https://www.linkedin.com/in/brunocarus/?originalSubdomain=br)
-- [Instagram](https://www.instagram.com/IBrunooDev/)
----
-
-Desenvolvido com :heart: por [IBrunooDev](https://github.com/IBrunooDev) 
-© 2026 IBrunooDev. Todos os direitos reservados.
+© 2026 Bruno Henrique. Todos os direitos reservados.
