@@ -73,6 +73,9 @@ O terminal da página inicial também pode ser utilizado para navegar pelo portf
 | Legacy RP MTA | Landing page voltada ao segmento de games e apresentação de funcionalidades e scripts | HTML, CSS e JavaScript | [Ver projeto](https://legacymta.netlify.app/) | [GitHub](https://github.com/IBrunooDev/Projeto-Legacy) |
 | Limpeza de Casa | Landing page responsiva para uma empresa de limpeza | HTML, CSS e JavaScript | [Ver projeto](https://limpezaa.netlify.app/) | [GitHub](https://github.com/IBrunooDev/Projeto-Limpeza) |
 | F1Dev | Landing page para um campeonato de Fórmula 1 | HTML, CSS e JavaScript | [Ver projeto](https://f1dev.netlify.app/) | [GitHub](https://github.com/IBrunooDev/Projeto-F1) |
+| RIFA.GG | Site Completo para Gerenciar RIFA Online | Next.js, TypeScript  e JavaScript, PostgreSQL  | [Ver projeto](https://rifa-gg.vercel.app/) | [GitHub](https://github.com/IBrunooDev/Projeto-RIFA.GG) |
+| BOT Discord | Sistema de bot discord para Gerenciar RIFA Online | Node.js 20+, TypeScript  e Discord.js 14, Supabase, PostgreSQL, Zod, dotenv, AI | [GitHub](https://github.com/IBrunooDev/Projeto-BOT) |
+| Pedido Namoro | Landing page Projeto Love é uma experiência web interativa e personalizada, criada para apresentar momentos especiais de forma visual e envolvente.| HTML, CSS e JavaScript | [Ver projeto](https://projeto-lovee.netlify.app/) | [GitHub](https://github.com/IBrunooDev/Projeto-Pedido) |
 
 ## Estrutura do projeto
 
