@@ -145,8 +145,12 @@ Para adicionar um novo certificado:
 2. coloque o PDF em `src/docs/certificates/`;
 3. adicione as informações do certificado ao array `CERTIFICATES`, localizado em `src/js/certificates.js`.
 
-## Autor
+- ## Links
 
-Desenvolvido com dedicação por **Bruno Henrique — IBrunooDev**.
+- [GitHub](https://github.com/IBrunooDev)
+- [LinkedIn](https://www.linkedin.com/in/brunocarus/?originalSubdomain=br)
+- [Instagram](https://www.instagram.com/IBrunooDev/)
+---
 
-© 2026 Bruno Henrique. Todos os direitos reservados.
+Desenvolvido com :heart: por [IBrunooDev](https://github.com/IBrunooDev) 
+© 2026 IBrunooDev. Todos os direitos reservados.
