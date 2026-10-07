@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IBrunooDev | Projetos</title>
+  <link rel="icon" type="image/x-icon" href="src/img/Icon-BrunoH-V2.png" />
+  <link rel="stylesheet" href="src/css/root.css" />
+  <link rel="stylesheet" href="src/css/global.css" />
+  <link rel="stylesheet" href="src/css/navbar.css" />
+  <link rel="stylesheet" href="src/css/projects.css" />
+  <link rel="stylesheet" href="src/css/teste-card.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body data-page="projetos">
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">BH</span>
+        <span class="brand-name">Bruno Henrique<span>.dev</span></span>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html" data-nav="inicio">Início</a>
+        <a href="sobre.html" data-nav="sobre">Sobre</a>
+        <a href="carreira.html" data-nav="carreira">Carreira</a>
+        <a href="projetos.html" data-nav="projetos">Projetos</a>
+        <a href="skills.html" data-/nav="skills">Skills</a>
+        <a href="certificados.html" data-nav="certificados">Certificados</a>
+        <a href="contato.html" data-nav="contato">Contato</a>
+        <a href="frase.html" data-nav="frase">Frase</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="container">
+      <div class="page-intro reveal">
+        <p class="page-kicker">versículos</p>
+        <h1>Meus versículos, minha fé e minha força.</h1>
+        <p class="page-lead">
+          Vivendo pela fé, guiado por Deus. Meu plano nunca desistir. 🙏✨
+        </p>
+      </div>
+      <div id="project-toolbar" class="project-toolbar reveal"></div>
+      <div id="project-grid" class="project-grid"></div>
+    </section>
+    <!-- =============== -->
+
+    <section class="projects-section">
+
+      <!-- DETALHE SUPERIOR -->
+      <div class="top-line"></div>
+
+      <!-- PROJETOS -->
+      <div class="projects-container">
+
+        <!-- frase 01 -->
+        <article class="project-card">
+
+          <div class="card-corner corner-top-left"></div>
+          <div class="card-corner corner-top-right"></div>
+
+          <div class="project-image">
+
+            <img src="src/img/Img-Biblica.png" alt="Projeto 1">
+
+            <div class="image-overlay">
+              <span>01</span>
+            </div>
+
+          </div>
+
+          <div class="project-content">
+            <span class="project-number">
+              
+            </span>
+
+            <h2>🙏 Eclesiastes 3:1</h2>
+
+            <p>
+              “Tudo tem o seu tempo determinado, e há tempo para todo propósito debaixo do céu.”
+            </p>
+
+            <div class="project-buttons">
+
+              <a href="https://www.bibliaonline.com.br/avm/ec/3/1+" target="_blank" class="btn-project">
+                Ver Versículo
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- frase 02 -->
+        <article class="project-card">
+
+          <div class="card-corner corner-top-left"></div>
+          <div class="card-corner corner-top-right"></div>
+
+          <div class="project-image">
+
+            <img src="src/img/Img-Biblica-2.png" alt="Projeto 2">
+
+            <div class="image-overlay">
+              <span>02</span>
+            </div>
+
+          </div>
+
+          <div class="project-content">
+
+            <span class="project-number">
+              
+            </span>
+
+            <h2>📖 Isaías 41:10</h2>
+
+            <p>Não temas, porque eu sou contigo; não te assombres, porque eu sou teu Deus; eu te fortaleço, e te ajudo, e te sustento com a destra da minha justiça.”</p>
+             
+
+            <div class="project-buttons">
+
+              <a href="https://www.bibliaonline.com.br/avm/is/41/10+" target="_blank" class="btn-project">
+                Ver Versículo
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- frase 03 -->
+        <article class="project-card">
+
+          <div class="card-corner corner-top-left"></div>
+          <div class="card-corner corner-top-right"></div>
+
+          <div class="project-image">
+
+            <img src="src/img/Img-Biblica-3.png" alt="Projeto 3">
+
+            <div class="image-overlay">
+              <span>03</span>
+            </div>
+
+          </div>
+
+          <div class="project-content">
+
+            <span class="project-number">
+              
+            </span>
+
+            <h2>💪 Romanos 8:28</h2>
+
+            <p>
+              “Todas as coisas contribuem juntamente para o bem daqueles que amam a Deus.”
+            </p>
+
+            <div class="project-buttons">
+
+              <a href="https://www.bibliaonline.com.br/avm/rm/8/28+" target="_blank" class="btn-project">
+                Ver Versículo
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+    </section>
+
+    <!--============================== -->
+
+  </main>
+  <div id="project-modal" class="project-modal" role="dialog" aria-modal="true" aria-label="Projeto">
+    <div class="project-modal-dialog">
+      <button id="project-modal-close" class="project-modal-close" type="button" aria-label="Fechar">
+
+      </button>
+      <img id="project-modal-image" alt="" />
+    </div>
+  </div>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="social-links">
+        <p>&copy; 2026 Bruno Henrique. Todos os direitos reservados.</p>
+        <a href="https://www.linkedin.com/in/brunocarus/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/IBrunooDev" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.instagram.com/ibrunoodev/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="src/js/navbar.js"></script>
+  <script src="src/js/main.js"></script>
+  <script src="src/js/certificates.js"></script>
+</body>
+
+</html>
