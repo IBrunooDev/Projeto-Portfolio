@@ -4,7 +4,8 @@ Portfólio profissional de **Bruno Henrique**, desenvolvedor Front-End em forma�
 
 O site possui um visual **dark, moderno e responsivo**, com detalhes inspirados em interfaces de terminal, animações de entrada, player de música e navegação por várias páginas.
 
-<img width="1365" height="594" alt="image" src="https://github.com/user-attachments/assets/11b1f139-5557-4700-bb57-f10a0dcd7adf" />
+<img width="1365" height="596" alt="image" src="https://github.com/user-attachments/assets/c8c9554b-bccb-4d0b-8d94-ba33ec82d940" />
+
 
 
 ## Acesse o projeto
