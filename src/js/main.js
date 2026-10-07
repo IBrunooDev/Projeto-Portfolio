@@ -35,11 +35,11 @@ document.addEventListener("DOMContentLoaded", () => {
   player.innerHTML = `
     <div class="player-info">
       <span class="player-label">Áudio</span>
-      <span class="music-name">TKANDZ — Now or Never</span>
+      <span class="music-name">Djonga-Benca</span>
     </div>
     <button id="play-pause" class="play-btn" aria-label="Tocar música">▶</button>
     <audio id="bg-audio" loop>
-      <source src="src/audio/TKANDZ - NOW OR NEVER.mp3" type="audio/mpeg">
+      <source src="src/audio/Djonga-Benca.mp3" type="audio/mpeg">
     </audio>
   `;
   document.body.appendChild(player);
