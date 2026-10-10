@@ -14,7 +14,7 @@ O site possui um visual **dark, moderno e responsivo**, com detalhes inspirados 
 | Site | [ibrunoodev.netlify.app](https://ibrunoodev.netlify.app/) |
 | GitHub | [github.com/IBrunooDev](https://github.com/IBrunooDev) |
 | LinkedIn | [linkedin.com/in/brunocarus](https://www.linkedin.com/in/brunocarus/) |
-| Instagram | [instagram.com/ibrunoodev](https://www.instagram.com/ibrunoodev/) |
+| Instagram | [instagram.com/bdev.404](https://www.instagram.com/bdev.404/) |
 
 ## Páginas do site
 
@@ -137,7 +137,7 @@ Para adicionar um novo certificado:
 
 - [GitHub](https://github.com/IBrunooDev)
 - [LinkedIn](https://www.linkedin.com/in/brunocarus/?originalSubdomain=br)
-- [Instagram](https://www.instagram.com/IBrunooDev/)
+- [Instagram](https://www.instagram.com/bdev.404/)
 ---
 
 Desenvolvido com :heart: por [IBrunooDev](https://github.com/IBrunooDev) 
