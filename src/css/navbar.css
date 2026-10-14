@@ -86,18 +86,27 @@
 
 .nav-toggle {
   display: none;
-  width: 40px;
-  height: 40px;
-  place-items: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
   gap: 5px;
   flex-direction: column;
+  line-height: 0;
 }
 
 .nav-toggle span {
   display: block;
-  width: 18px;
-  height: 1.5px;
+  flex: 0 0 auto;
+  width: 24px;
+  height: 2px;
+  margin: 0;
+  padding: 0;
+  border-radius: 999px;
   background: var(--color-text);
+  transform-origin: center;
   transition: transform var(--transition-fast), opacity var(--transition-fast);
 }
 
@@ -148,5 +157,22 @@
 
   .site-nav a.is-active {
     color: var(--color-primary);
+  }
+}
+
+
+/* Ajuste fino do ícone hambúrguer: linhas centralizadas dentro do botão */
+@media (max-width: 980px) {
+  .nav-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .nav-toggle span {
+    width: 24px;
+    height: 2px;
+    margin: 0;
   }
 }

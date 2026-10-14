@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="src/css/navbar.css" />
   <link rel="stylesheet" href="src/css/home.css" />
   <link rel="stylesheet" href="src/css/terminal.css" />
+  <link rel="stylesheet" href="src/css/redesign.css" />
   <link
     href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
     rel="stylesheet" />
@@ -48,19 +49,17 @@
         <h1>Bruno Henrique</h1>
         <p class="hero-role">Desenvolvedor Front-End</p>
         <p class="hero-text">
-          Desenvolvedor Front-End em formação, com foco no desenvolvimento de interfaces modernas, responsivas e
-          intuitivas. Possuo conhecimentos em HTML, CSS e JavaScript, aplicando boas práticas de desenvolvimento,
-          responsividade, organização de código e experiência do usuário (UX/UI).
+          Desenvolvedor Front-End em formação, com foco em interfaces modernas, responsivas e intuitivas. Tenho praticado HTML, CSS e JavaScript em projetos próprios, com atenção à organização do código e à experiência do usuário.
           <br /><br />
           Busco minha primeira oportunidade profissional na área de tecnologia para aplicar meus conhecimentos em
           projetos reais, adquirir experiência prática e evoluir continuamente como desenvolvedor.
         </p>
 
         <div class="hero-actions">
-          <a href="contato.html" class="btn btn-primary">Vamos conversar</a>
-          <a href="src/docs/(CV) - Bruno Dev Novo.pdf" target="_blank" class="btn btn-secondary">Baixar currículo</a>
+          <a href="projetos.html" class="btn btn-primary">Ver projetos <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/IBrunooDev" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="src/docs/(CV) - Bruno Dev Novo.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Baixar currículo</a>
         </div>
-        <br /><br />
       </div>
       <div class="hero-visual reveal">
         <div class="hero-frame">
@@ -88,29 +87,40 @@
     <section class="home-block container">
       <div class="home-block-head reveal">
         <div>
-          <p class="page-kicker">Seleção</p>
-          <h2 class="section-title">Alguns trabalhos</h2>
+          <p class="page-kicker">Projetos em destaque</p>
+          <h2 class="section-title">Projetos que mostram minha evolução</h2>
         </div>
-        <p>Desenvolvimento de landing pages e sites responsivos com HTML, CSS e JavaScript. Confira outros projetos e
-          tecnologias na seção de Projetos.</p>
+        <p>Aplicações e interfaces que desenvolvi enquanto pratico programação, organização de código e construção de experiências web.</p>
       </div>
       <div class="featured-grid">
         <article class="featured-card reveal">
-          <img src="src/img/Img-Projeto-Legacy.jpg" alt="Legacy RP MTA" />
+          <img src="src/img/Img-Projeto-LGCWIN.png" alt="Prévia do bot LGC Win para Discord" loading="lazy" />
           <div class="featured-body">
-            <h3>Legacy RP MTA</h3>
-            <p>Landing page para o segmento de games (MTA), desenvolvida com foco em interface responsiva, experiência
-              do usuário e apresentação de funcionalidades e scripts.</p>
-            <a class="featured-link" href="projetos.html">Ver projetos</a>
+            <p class="page-kicker">Bot para Discord</p>
+            <h3>BOT LGC Win</h3>
+            <p>Bot de rifas para Discord com comandos, cupons, gerenciamento de rifas e integração com banco de dados.</p>
+            <div class="tech-tags"><span>Node.js</span><span>TypeScript</span><span>Discord.js</span><span>Supabase</span></div>
+            <a class="featured-link" href="https://github.com/IBrunooDev/Projeto-BOT" target="_blank" rel="noopener noreferrer">Ver código <span aria-hidden="true">↗</span></a>
           </div>
         </article>
         <article class="featured-card reveal">
-          <img src="src/img/Img-Projeto-SkyPage.jpg" alt="SkyPage" />
+          <img src="src/img/Img-Projeto-RIFA.GG.png" alt="Prévia do projeto web RIFA.GG" loading="lazy" />
           <div class="featured-body">
-            <h3>SkyPage</h3>
-            <p>Site corporativo simulado, com atenção a estrutura, ritmo visual e carregamento.</p>
-            <a class="featured-link" href="https://skypagee.netlify.app/" target="_blank" rel="noopener">Abrir o
-              site</a>
+            <p class="page-kicker">Aplicação web</p>
+            <h3>RIFA.GG</h3>
+            <p>Projeto de plataforma de rifas, com interface web e funcionalidades de gerenciamento conforme implementadas no projeto.</p>
+            <div class="tech-tags"><span>Next.js</span><span>TypeScript</span><span>PostgreSQL</span><span>Supabase</span></div>
+            <a class="featured-link" href="https://github.com/IBrunooDev/Projeto-RIFA.GG" target="_blank" rel="noopener noreferrer">Ver código <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="featured-card reveal">
+          <img src="src/img/Img-Projeto-Portfolio.jpg" alt="Prévia do portfólio pessoal" loading="lazy" />
+          <div class="featured-body">
+            <p class="page-kicker">Site pessoal</p>
+            <h3>Portfólio pessoal</h3>
+            <p>Site com múltiplas páginas para apresentar projetos, trajetória de estudos, habilidades e formas de contato.</p>
+            <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a class="featured-link" href="https://github.com/IBrunooDev/Projeto-Portfolio" target="_blank" rel="noopener noreferrer">Ver código <span aria-hidden="true">↗</span></a>
           </div>
         </article>
       </div>

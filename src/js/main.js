@@ -3,7 +3,6 @@
  */
 
 document.addEventListener("DOMContentLoaded", () => {
-  window.scrollTo(0, 0);
 
   const overlay = document.createElement("div");
   overlay.id = "loading-overlay";
@@ -19,9 +18,11 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("load", hideOverlay);
   setTimeout(hideOverlay, 700);
 
+  const revealElements = document.querySelectorAll(".reveal");
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const reveal = () => {
-    document.querySelectorAll(".reveal").forEach((el) => {
-      if (el.getBoundingClientRect().top < window.innerHeight - 80) {
+    revealElements.forEach((el) => {
+      if (reduceMotion || el.getBoundingClientRect().top < window.innerHeight - 60) {
         el.classList.add("is-visible");
       }
     });
