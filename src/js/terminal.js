@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (cmd === "ls") {
-      print("inicio  sobre  carreira  projetos  skills  certificados  contato frese");
+      print("inicio  sobre  carreira  projetos  skills  certificados  contato");
       return;
     }
 

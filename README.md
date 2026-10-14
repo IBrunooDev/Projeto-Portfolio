@@ -6,8 +6,6 @@ O site foi desenvolvido com **HTML5, CSS3 e JavaScript**, com layout responsivo,
 
 🔗 **Portfólio online:** https://ibrunoodev.netlify.app/
 
-<img width="1365" height="598" alt="image" src="https://github.com/user-attachments/assets/5d126549-d52d-4d55-95d9-aac297e678d3" />
-
 ---
 
 ## 📌 Sobre o projeto
@@ -32,7 +30,6 @@ A navegação principal contém oito páginas:
 | Skills | `skills.html` | Tecnologias e ferramentas: HTML, CSS, JavaScript, TypeScript, React, Next.js, Tailwind CSS, Git e GitHub. |
 | Certificados | `certificados.html` | Área de certificados com filtros por emissor, pré-visualização, visualização ampliada e acesso aos PDFs disponíveis. |
 | Contato | `contato.html` | Links para GitHub, LinkedIn e e-mail. |
-| Frase | `frase.html` | Página pessoal com versículos bíblicos, imagens e links para consultar os textos. |
 
 ## ✨ Funcionalidades
 
@@ -67,11 +64,10 @@ Digite um comando no console da página inicial e pressione **Enter**:
 | `skills` ou `skill` | Abre a página Skills. |
 | `certificados` ou `certificado` | Abre a página Certificados. |
 | `contato` | Abre a página Contato. |
-| `frase` | Abre a página Frase. |
 
 ## 💻 Projetos apresentados
 
-O site apresenta projetos. A disponibilidade de demonstrações e repositórios pode variar conforme cada projeto.
+O site apresenta nove projetos. A disponibilidade de demonstrações e repositórios pode variar conforme cada projeto.
 
 ### 1. Portfólio
 Site pessoal com múltiplas páginas para apresentar projetos, trajetória, habilidades e formas de contato. Desenvolvido com foco em navegação, responsividade e organização visual.
@@ -116,14 +112,14 @@ Landing page desenvolvida para um campeonato de Fórmula 1, com foco em apresent
 - **Repositório:** https://github.com/IBrunooDev/Projeto-F1
 
 ### 7. RIFA.GG
-Plataforma relacionada ao gerenciamento de rifas para GTA San Andreas, no ambiente MTA (Multi Theft Auto). O projeto é apresentado como uma solução para organizar rifas, números disponíveis, compras, participantes e resultados. (Este projeto foi desenvolvido como parte dos meus estudos, com o objetivo de praticar e aprimorar meus conhecimentos.)
+Plataforma relacionada ao gerenciamento de rifas para GTA San Andreas, no ambiente MTA (Multi Theft Auto). O projeto é apresentado como uma solução para organizar rifas, números disponíveis, compras, participantes e resultados.
 
 - **Tecnologias indicadas no site:** HTML, CSS, JavaScript, TypeScript, Next.js, PostgreSQL, Vercel e Supabase
 - **Demo:** https://rifa-gg.vercel.app/admin
 - **Repositório:** https://github.com/IBrunooDev/Projeto-RIFA.GG
 
 ### 8. BOT LGC WIN
-Bot para Discord voltado ao gerenciamento de rifas. O projeto é descrito com funcionalidades de criação e gerenciamento de rifas, compras e reservas, controle de números, cupons, verificação e aprovação de pagamentos, logs, auditoria, permissões e divulgação de resultados. (Este projeto foi desenvolvido como parte dos meus estudos, com o objetivo de praticar e aprimorar meus conhecimentos.)
+Bot para Discord voltado ao gerenciamento de rifas. O projeto é descrito com funcionalidades de criação e gerenciamento de rifas, compras e reservas, controle de números, cupons, verificação e aprovação de pagamentos, logs, auditoria, permissões e divulgação de resultados.
 
 - **Tecnologias indicadas no site:** Node.js, TypeScript, Discord.js, Supabase, PostgreSQL e APIs REST
 - **Repositório:** https://github.com/IBrunooDev/Projeto-BOT
@@ -151,6 +147,19 @@ HTML, CSS, JavaScript, TypeScript, React, Next.js, Tailwind CSS, Git e GitHub.
 
 > As tecnologias variam entre os projetos. Consulte os respectivos repositórios para obter detalhes específicos de implementação.
 
+## 🎓 Certificados
+
+A página de certificados disponibiliza os itens habilitados na configuração atual do site:
+
+- HTML5 — OneBitCode (2025)
+- CSS3 — OneBitCode (2025)
+- CSS Moderno — OneBitCode (2025)
+- Git e GitHub — OneBitCode (2026)
+- JavaScript I — Fundamentos — OneBitCode (2026)
+- Certificado de Participação — Rocketseat (2024)
+
+O projeto também inclui arquivos de certificados adicionais na pasta local, mas a exibição na página depende da configuração em `src/js/certificates.js`.
+
 ## 📄 Currículo
 
 O arquivo de currículo está localizado em:
@@ -159,12 +168,6 @@ O arquivo de currículo está localizado em:
 
 Na página inicial, o botão **Baixar currículo** oferece acesso ao documento.
 
-## 📬 Contato e redes
-
-- **GitHub:** https://github.com/IBrunooDev
-- **LinkedIn:** https://www.linkedin.com/in/brunocarus/
-- **Instagram:** https://www.instagram.com/bdev.404/
-- **E-mail:** ibrunood3v@gmail.com
 
 ## 📁 Estrutura do projeto
 
@@ -177,7 +180,6 @@ Projeto-Portfolio/
 ├── skills.html
 ├── certificados.html
 ├── contato.html
-├── frase.html
 ├── README.md
 └── src/
     ├── audio/
