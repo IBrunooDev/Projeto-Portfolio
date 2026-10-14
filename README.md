@@ -6,6 +6,8 @@ O site foi desenvolvido com **HTML5, CSS3 e JavaScript**, com layout responsivo,
 
 🔗 **Portfólio online:** https://ibrunoodev.netlify.app/
 
+<img width="1365" height="598" alt="image" src="https://github.com/user-attachments/assets/5d126549-d52d-4d55-95d9-aac297e678d3" />
+
 ---
 
 ## 📌 Sobre o projeto
