@@ -973,3 +973,17 @@ a,button {
     }
 
 }
+
+
+/* Ajuste mobile: reduzir o espaço entre o cabeçalho fixo e o conteúdo de Sobre/Skills. */
+@media (max-width: 700px) {
+    .page.about-page,
+    .page.skills-page {
+        padding-top: calc(var(--header-height) + 0.5rem);
+    }
+
+    .page.about-page .about-section,
+    .page.skills-page .skills-section {
+        padding-top: 18px;
+    }
+}

@@ -16,7 +16,8 @@
   isolation: isolate;
   width: 100%;
   min-height: 100vh;
-  padding: clamp(52px, 7vw, 88px) 0 clamp(64px, 8vw, 100px);
+  /* Compensa o cabeçalho fixo para não esconder o início da página. */
+  padding: calc(var(--header-height) + clamp(2rem, 5vw, 3.5rem)) 0 clamp(64px, 8vw, 100px);
   overflow: clip;
   color: var(--cert-text);
   background:
@@ -706,7 +707,8 @@
 
 @media (max-width: 720px) {
   .certificates-page {
-    padding-top: 44px;
+    /* Em telas pequenas, mantém o título e o selo abaixo do menu fixo. */
+    padding-top: calc(var(--header-height) + 1.75rem);
   }
 
   .certificates-page .container {

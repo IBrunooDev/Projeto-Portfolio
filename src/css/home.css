@@ -1049,7 +1049,8 @@
     gap: 35px;
 
     min-height: 570px;
-    padding-top: 65px;
+    /* O cabeçalho é fixo: reservar a altura dele evita que o hero fique por baixo do menu. */
+    padding-top: calc(var(--header-height) + 2rem);
     padding-bottom: 65px;
   }
 
@@ -1109,7 +1110,8 @@
     gap: 42px;
 
     min-height: auto;
-    padding-top: 50px;
+    /* Mantém o início da home abaixo do cabeçalho fixo em telas menores. */
+    padding-top: calc(var(--header-height) + 2rem);
     padding-bottom: 50px;
   }
 
@@ -1225,7 +1227,7 @@
 
   .home-page .hero {
     gap: 35px;
-    padding-top: 38px;
+    padding-top: calc(var(--header-height) + 1.5rem);
     padding-bottom: 38px;
   }
 

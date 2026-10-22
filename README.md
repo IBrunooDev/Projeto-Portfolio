@@ -8,8 +8,6 @@ Portfólio pessoal de **Bruno Henrique**, desenvolvedor Front-End em formação.
 ✉️ **E-mail:** ibrunood3v@gmail.com
 
 ---
-<img width="1365" height="601" alt="image" src="https://github.com/user-attachments/assets/6b358ca5-412f-4f1a-a44f-488dda1c4445" />
-
 
 ## Sobre o projeto
 
