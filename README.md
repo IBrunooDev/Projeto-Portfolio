@@ -9,6 +9,9 @@ Portfólio pessoal de **Bruno Henrique**, desenvolvedor Front-End em formação.
 
 ---
 
+<img width="1365" height="594" alt="image" src="https://github.com/user-attachments/assets/50881349-e62e-4cbd-9ad6-b13b0d6ba617" />
+
+
 ## Sobre o projeto
 
 O portfólio foi criado para apresentar minha evolução na tecnologia e demonstrar, por meio de projetos independentes, meus conhecimentos em desenvolvimento web, interfaces responsivas e automações.
