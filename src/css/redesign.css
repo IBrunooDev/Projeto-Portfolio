@@ -1,41 +1,21 @@
 /* REDESIGN 2026 — camada visual compartilhada, preservando o HTML e os recursos existentes * */
 
-:root {
-    --color-primary:#28d8c3;
-    --color-primary-hover:#54ead8;
-    --color-primary-soft:rgba(40,216,195,.10);
-    --color-bg:#071014;
-    --color-bg-elevated:#0d1a20;
-    --color-bg-card:#0c191e;
-    --color-bg-header:rgba(7,16,20,.92);
-    --color-bg-footer:#060d10;
-    --color-text:#edf7f7;
-    --color-text-muted:#a1b5b9;
-    --color-border:rgba(202,231,232,.10);
-    --color-border-strong:rgba(202,231,232,.17);
-    --color-border-accent:rgba(40,216,195,.34);
-    --shadow-focus:0 0 0 3px rgba(40,216,195,.25);
-    --radius-sm:8px;
-    --radius-md:12px;
-    --radius-lg:18px;
-}
-
 html {
     scroll-padding-top: calc(var(--header-height) + 1rem);
 }
 
 body {
     background-color:var(--color-bg);
-    background-image:radial-gradient(ellipse at 15% 0%,rgba(40,216,195,.065),transparent 34%),linear-gradient(180deg,rgba(255,255,255,.012) 1px,transparent 1px);
+    background-image:radial-gradient(ellipse at 15% 0%,rgba(var(--color-primary-rgb), .065),transparent 34%),linear-gradient(180deg,rgba(255,255,255,.012) 1px,transparent 1px);
     background-size:auto,56px 56px;
 }
 
 body::before {
-    background:radial-gradient(ellipse at 90% 18%,rgba(40,216,195,.035),transparent 35%);
+    background:radial-gradient(ellipse at 90% 18%,rgba(var(--color-primary-rgb), .035),transparent 35%);
 }
 
 ::selection {
-    background:rgba(40,216,195,.25);
+    background:rgba(var(--color-primary-rgb), .25);
     color:#fff;
 }
 
@@ -44,7 +24,7 @@ body::before {
 }
 
 .site-header {
-    border-bottom-color:rgba(40,216,195,.16);
+    border-bottom-color:rgba(var(--color-primary-rgb), .16);
     box-shadow:0 8px 32px rgba(0,0,0,.12);
 }
 
@@ -56,7 +36,7 @@ body::before {
     width:38px;
     height:38px;
     border-radius:12px;
-    background:rgba(40,216,195,.08);
+    background:rgba(var(--color-primary-rgb), .08);
     font-size:.7rem;
     font-weight:600;
 }
@@ -81,7 +61,7 @@ body::before {
 
 .site-nav a:hover,.site-nav a.is-active {
     color:var(--color-primary);
-    background:rgba(40,216,195,.065);
+    background:rgba(var(--color-primary-rgb), .065);
 }
 
 .site-nav a.is-active::after {
@@ -129,8 +109,8 @@ body::before {
 
 .btn-primary {
     background:var(--color-primary);
-    color:#03201e;
-    box-shadow:0 7px 22px rgba(40,216,195,.12);
+    color:#08111f;
+    box-shadow:0 7px 22px rgba(var(--color-primary-rgb), .12);
 }
 
 .btn-primary:hover {
@@ -145,12 +125,12 @@ body::before {
 
 .btn-secondary:hover,.btn-ghost:hover {
     border-color:var(--color-primary);
-    background:rgba(40,216,195,.06);
+    background:rgba(var(--color-primary-rgb), .06);
 }
 
 .site-footer {
     margin-top:2rem;
-    border-top-color:rgba(40,216,195,.16);
+    border-top-color:rgba(var(--color-primary-rgb), .16);
 }
 
 .site-footer .container {
@@ -189,7 +169,7 @@ body::before {
     padding:.28rem .65rem;
     border:1px solid var(--color-border-accent);
     border-radius:999px;
-    background:rgba(40,216,195,.07);
+    background:rgba(var(--color-primary-rgb), .07);
     color:var(--color-primary);
 }
 
@@ -207,7 +187,7 @@ body::before {
 
 .hero-text {
     max-width:39rem;
-    color:#afc1c4;
+    color:#cbd5e1;
     line-height:1.8;
 }
 
@@ -228,7 +208,7 @@ body::before {
     object-fit:cover;
     object-position:center 20%;
     border-radius:24px;
-    border-color:rgba(40,216,195,.22);
+    border-color:rgba(var(--color-primary-rgb), .22);
     box-shadow:0 20px 70px rgba(0,0,0,.28);
 }
 
@@ -244,7 +224,7 @@ body::before {
     margin:0 auto;
     border:1px solid var(--color-border);
     border-radius:16px;
-    background:rgba(12,25,30,.72);
+    background:rgba(15, 23, 42, .72);
     overflow:hidden;
 }
 
@@ -283,13 +263,13 @@ body::before {
     min-width:0;
     border:1px solid var(--color-border);
     border-radius:16px;
-    background:linear-gradient(180deg,rgba(15,31,37,.96),rgba(9,19,23,.98));
+    background:linear-gradient(180deg,rgba(17, 24, 39, .96),rgba(11, 17, 32, .98));
     transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease;
 }
 
 .featured-card:hover {
     transform:translateY(-5px);
-    border-color:rgba(40,216,195,.42);
+    border-color:rgba(var(--color-primary-rgb), .42);
     box-shadow:0 18px 40px rgba(0,0,0,.22);
 }
 
@@ -327,7 +307,7 @@ body::before {
 }
 
 .featured-link:hover {
-    background:rgba(40,216,195,.08);
+    background:rgba(var(--color-primary-rgb), .08);
     text-decoration:none;
 }
 
@@ -341,11 +321,11 @@ body::before {
 .tech-tags span {
     padding:.22rem .5rem;
     border-radius:999px;
-    background:rgba(40,216,195,.07);
-    border:1px solid rgba(40,216,195,.13);
+    background:rgba(var(--color-primary-rgb), .07);
+    border:1px solid rgba(var(--color-primary-rgb), .13);
     font-family:var(--font-mono);
     font-size:.68rem;
-    color:#9ce9df;
+    color:var(--color-primary-light);
 }
 
 .console-intro {
@@ -358,18 +338,18 @@ body::before {
 }
 
 .terminal {
-    border:1px solid rgba(40,216,195,.2);
+    border:1px solid rgba(var(--color-primary-rgb), .2);
     border-radius:16px;
     overflow:hidden;
     box-shadow:0 18px 48px rgba(0,0,0,.18);
 }
 
 .terminal-bar {
-    background:#102228;
+    background:#111e32;
 }
 
 .terminal-screen {
-    background:#071115;
+    background:#0b1120;
 }
 
 .about-grid,.contact-layout {
@@ -402,14 +382,14 @@ body::before {
     padding:1.15rem 1.25rem;
     border:1px solid var(--color-border);
     border-radius:14px;
-    background:rgba(12,25,30,.72);
+    background:rgba(15, 23, 42, .72);
     margin-bottom:1rem;
 }
 
 .timeline-item::before {
     left:calc(-1 * var(--space-xl) - 3px);
     border-radius:50%;
-    box-shadow:0 0 0 5px rgba(40,216,195,.08);
+    box-shadow:0 0 0 5px rgba(var(--color-primary-rgb), .08);
 }
 
 .timeline-date {
@@ -426,7 +406,7 @@ body::before {
     min-height:88px;
     border:1px solid var(--color-border)!important;
     border-radius:14px;
-    background:rgba(12,25,30,.72);
+    background:rgba(15, 23, 42, .72);
     padding:1.15rem;
     transition:border-color .2s ease,transform .2s ease;
 }
@@ -452,7 +432,7 @@ body::before {
 }
 
 .contact-item:hover {
-    background:rgba(40,216,195,.05);
+    background:rgba(var(--color-primary-rgb), .05);
 }
 
 .cert-toolbar,.project-toolbar {
@@ -465,7 +445,7 @@ body::before {
 }
 
 .cert-filter.is-active,.cert-filter:hover {
-    background:rgba(40,216,195,.09);
+    background:rgba(var(--color-primary-rgb), .09);
     border-color:var(--color-primary);
     color:var(--color-primary);
 }
@@ -530,7 +510,7 @@ body::before {
     border:1px solid var(--color-border);
     border-radius:12px;
     padding:.8rem 1.2rem;
-    background:rgba(40,216,195,.04);
+    background:rgba(var(--color-primary-rgb), .04);
 }
 
 .project-count span {
@@ -556,7 +536,7 @@ body::before {
     overflow:hidden;
     border:1px solid var(--color-border);
     border-radius:16px;
-    background:linear-gradient(180deg,#0d1b20,#091317);
+    background:linear-gradient(180deg,#111827,#0b1120);
     transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease;
 }
 
@@ -585,7 +565,7 @@ body::before {
 }
 
 .image-overlay {
-    background:linear-gradient(180deg,transparent,rgba(3,10,13,.55));
+    background:linear-gradient(180deg,transparent,rgba(11, 17, 32, .55));
 }
 
 .project-content {
@@ -620,11 +600,11 @@ body::before {
 }
 
 .technologies span {
-    border:1px solid rgba(40,216,195,.15);
-    background:rgba(40,216,195,.06);
+    border:1px solid rgba(var(--color-primary-rgb), .15);
+    background:rgba(var(--color-primary-rgb), .06);
     border-radius:999px;
     padding:.2rem .5rem;
-    color:#9ce9df;
+    color:var(--color-primary-light);
     font-size:.72rem;
 }
 
@@ -650,7 +630,7 @@ body::before {
 
 .btn-project {
     background:var(--color-primary);
-    color:#04201e;
+    color:#08111f;
     border-color:var(--color-primary);
 }
 
@@ -672,7 +652,7 @@ body::before {
 .music-player {
     border:1px solid var(--color-border-accent)!important;
     border-radius:14px!important;
-    background:rgba(8,20,24,.94)!important;
+    background:rgba(11, 17, 32, .94)!important;
     box-shadow:0 12px 35px rgba(0,0,0,.3);
 }
 

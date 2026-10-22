@@ -1,57 +1,847 @@
-/*
-  CARREIRA.CSS
-*/
 
-.timeline {
+/* ==================================================
+   TRAJETÓRIA — BRUNO DEV
+   Identidade visual alinhada à página Home
+================================================== */
+
+/* ---------- Variáveis e base ---------- */
+
+.trajectory-page {
+  --tr-bg: #080d19;
+  --tr-card: #0d1728;
+  --tr-card-hover: #111e32;
+  --tr-text: #f1f5f9;
+  --tr-muted: #94a3b8;
+  --tr-border: rgba(148, 163, 184, 0.15);
+
   position: relative;
-  max-width: var(--container-sm);
-  margin-left: 0.75rem;
-  padding-left: var(--space-xl);
+  isolation: isolate;
+
+  width: 100%;
+  min-height: 100vh;
+  padding: clamp(60px, 8vw, 100px) 0;
+
+  color: var(--tr-text);
+
+  background:
+    radial-gradient(
+      ellipse at 10% 5%,
+      rgba(var(--color-primary-rgb), 0.09),
+      transparent 35%
+    ),
+    radial-gradient(
+      ellipse at 90% 30%,
+      rgba(var(--color-primary-rgb), 0.07),
+      transparent 32%
+    );
 }
 
-.timeline::before {
+.trajectory-page *,
+.trajectory-page *::before,
+.trajectory-page *::after {
+  box-sizing: border-box;
+}
+
+.trajectory-page .container {
+  width: min(1100px, calc(100% - 48px));
+  margin-inline: auto;
+}
+
+/* Evita que estilos globais criem molduras duplicadas */
+
+.trajectory-page .trajectory-section,
+.trajectory-page .section-heading,
+.trajectory-page .timeline {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+/* ==================================================
+   INTRODUÇÃO
+================================================== */
+
+.trajectory-page > .container > .page-intro {
+  max-width: 760px;
+  margin: 0 0 clamp(60px, 8vw, 90px);
+}
+
+.trajectory-page .page-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  margin: 0 0 20px;
+  padding: 9px 14px;
+
+  border: 1px solid rgba(var(--color-primary-rgb), 0.22);
+  border-radius: 999px;
+
+  background: rgba(var(--color-primary-rgb), 0.07);
+  color: var(--color-primary);
+
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.trajectory-page .page-kicker::before {
   content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 1px;
-  background: var(--color-border-strong);
-}
 
-.timeline-item {
-  position: relative;
-  margin-bottom: var(--space-xl);
-}
-
-.timeline-item::before {
-  content: "";
-  position: absolute;
-  left: calc(-1 * var(--space-xl) - 3px);
-  top: 8px;
   width: 7px;
   height: 7px;
+  flex: 0 0 7px;
+
+  border-radius: 50%;
   background: var(--color-primary);
+
+  box-shadow: 0 0 12px rgba(var(--color-primary-rgb), 0.65);
 }
 
-.timeline-date {
-  font-family: var(--font-mono);
-  font-size: var(--fs-xs);
+.trajectory-page .page-intro h1 {
+  margin: 0;
+
+  color: var(--tr-text);
+
+  font-size: clamp(3rem, 7vw, 5rem);
+  font-weight: 850;
+  letter-spacing: -0.06em;
+  line-height: 1.08;
+}
+
+.trajectory-page .page-intro h1 span,
+.trajectory-page .section-heading h2 span {
   color: var(--color-primary);
-  margin-bottom: var(--space-xs);
 }
 
-.timeline-content h3 {
-  font-size: var(--fs-lg);
-  margin-bottom: var(--space-2xs);
+.trajectory-page .page-lead {
+  max-width: 650px;
+  margin: 22px 0 0;
+
+  color: var(--tr-muted);
+
+  font-size: clamp(0.98rem, 1.5vw, 1.1rem);
+  line-height: 1.85;
 }
 
-.company {
-  font-size: var(--fs-sm);
-  color: var(--color-text-muted);
-  margin-bottom: var(--space-sm);
+/* ==================================================
+   CABEÇALHO DAS SEÇÕES
+================================================== */
+
+.trajectory-page .trajectory-section {
+  position: relative;
+  margin-top: clamp(65px, 9vw, 105px);
 }
 
-.timeline-content p {
-  color: var(--color-text-muted);
+.trajectory-page .section-heading {
+  max-width: 720px;
+  margin: 0 0 36px;
+}
+
+.trajectory-page .section-number {
+  display: block;
+
+  margin-bottom: 14px;
+
+  color: var(--color-primary);
+
+  font-size: 0.73rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+
+.trajectory-page .section-heading h2 {
+  margin: 0;
+
+  color: var(--tr-text);
+
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 1.2;
+}
+
+.trajectory-page .section-heading > p {
+  max-width: 620px;
+  margin: 16px 0 0;
+
+  color: var(--tr-muted);
+
+  font-size: 0.98rem;
+  line-height: 1.85;
+}
+
+/* ==================================================
+   LINHA DO TEMPO
+================================================== */
+
+.trajectory-page .timeline {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* Linha vertical alinhada com os marcadores */
+
+.trajectory-page .timeline::before {
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 168px;
+
+  width: 1px;
+
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(var(--color-primary-rgb), 0.55) 8%,
+    rgba(var(--color-primary-rgb), 0.35) 90%,
+    transparent
+  );
+
+  pointer-events: none;
+}
+
+/* ==================================================
+   ITEM DA TIMELINE
+   Remove a moldura externa duplicada
+================================================== */
+
+.trajectory-page .timeline-item {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 140px minmax(0, 1fr);
+  align-items: start;
+  gap: 28px;
+
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+
+  border: 0;
+  border-radius: 0;
+  outline: none;
+
+  background: transparent;
+  box-shadow: none;
+
+  overflow: visible;
+}
+
+/* Desativa possíveis pseudo-elementos antigos */
+
+.trajectory-page .timeline-item::before,
+.trajectory-page .timeline-item::after {
+  content: none;
+  display: none;
+}
+
+/* ==================================================
+   DATA E MARCADOR
+================================================== */
+
+.trajectory-page .timeline-date {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  min-width: 0;
+  min-height: 54px;
+  padding: 22px 0 0;
+
+  color: var(--color-primary);
+
+  font-size: 0.8rem;
+  font-weight: 800;
+  line-height: 1.5;
+  text-align: right;
+}
+
+/* Marcador azul */
+
+.trajectory-page .timeline-dot {
+  position: absolute;
+  top: 32px;
+  right: -42px;
+  z-index: 3;
+
+  width: 13px;
+  height: 13px;
+  flex: 0 0 13px;
+
+  border: 3px solid var(--tr-bg);
+  border-radius: 50%;
+
+  background: var(--color-primary);
+
+  box-shadow:
+    0 0 0 4px rgba(var(--color-primary-rgb), 0.12),
+    0 0 14px rgba(var(--color-primary-rgb), 0.4);
+
+  transition:
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* ==================================================
+   CARD PRINCIPAL
+   Este é o único elemento com moldura
+================================================== */
+
+.trajectory-page .timeline-content {
+  position: relative;
+  isolation: isolate;
+
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  padding: clamp(22px, 3vw, 32px);
+
+  border: 1px solid rgba(var(--color-primary-rgb), 0.28);
+  border-radius: 21px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(17, 28, 47, 0.98),
+    rgba(9, 17, 31, 0.98)
+  );
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.13),
+    inset 0 1px 0 rgba(255, 255, 255, 0.025);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Linha azul e roxa no topo do card */
+
+.trajectory-page .timeline-content::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 2px;
+
+  background: linear-gradient(
+    90deg,
+    var(--color-primary-hover),
+    var(--color-primary),
+    transparent
+  );
+
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+/* Brilho decorativo discreto */
+
+.trajectory-page .timeline-content::after {
+  content: "";
+
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  z-index: -1;
+
+  width: 220px;
+  height: 220px;
+
+  border-radius: 50%;
+
+  background: rgba(var(--color-primary-rgb), 0.045);
+  filter: blur(45px);
+
+  pointer-events: none;
+}
+
+/* ==================================================
+   CABEÇALHO DO CARD
+================================================== */
+
+.trajectory-page .timeline-card-top {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  margin: 0 0 24px;
+}
+
+.trajectory-page .timeline-tag {
+  display: inline-flex;
+  align-items: center;
+
+  max-width: 100%;
+  padding: 8px 11px;
+
+  border: 1px solid rgba(var(--color-primary-rgb), 0.2);
+  border-radius: 7px;
+
+  background: rgba(var(--color-primary-rgb), 0.08);
+  color: var(--color-primary);
+
+  font-size: 0.7rem;
+  font-weight: 750;
+  letter-spacing: 0.025em;
+}
+
+.trajectory-page .timeline-index {
+  color: rgba(148, 163, 184, 0.4);
+
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+/* ==================================================
+   TÍTULOS E DESCRIÇÕES
+================================================== */
+
+.trajectory-page .timeline-content h3 {
+  position: relative;
+  z-index: 1;
+
+  margin: 0 0 10px;
+
+  color: var(--tr-text);
+
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.45;
+
+  overflow-wrap: anywhere;
+}
+
+.trajectory-page .timeline-content .company {
+  position: relative;
+  z-index: 1;
+
+  margin: 0 0 20px;
+
+  color: var(--color-primary);
+
+  font-size: 0.88rem;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.trajectory-page .timeline-description {
+  position: relative;
+  z-index: 1;
+
+  margin: 0;
+
+  color: var(--tr-muted);
+
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.9;
+
+  overflow-wrap: anywhere;
+}
+
+.trajectory-page .timeline-description + .timeline-description {
+  margin-top: 16px;
+}
+
+/* ==================================================
+   RODAPÉ DOS CARDS
+================================================== */
+
+.trajectory-page .timeline-footer {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 9px;
+
+  margin-top: 24px;
+  padding-top: 18px;
+
+  border-top: 1px solid rgba(148, 163, 184, 0.1);
+
+  color: #8291a9;
+
+  font-size: 0.77rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.trajectory-page .status-dot {
+  display: inline-block;
+
+  width: 7px;
+  height: 7px;
+  flex: 0 0 7px;
+
+  border-radius: 50%;
+
+  background: var(--color-primary);
+  box-shadow: 0 0 10px rgba(var(--color-primary-rgb), 0.4);
+}
+
+/* ==================================================
+   TECNOLOGIAS
+================================================== */
+
+.trajectory-page .technology-list {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+
+  margin-top: 22px;
+}
+
+.trajectory-page .technology-list span {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 8px 11px;
+
+  border: 1px solid rgba(148, 163, 184, 0.13);
+  border-radius: 8px;
+
+  background: rgba(148, 163, 184, 0.045);
+  color: #cbd5e1;
+
+  font-size: 0.75rem;
+  font-weight: 650;
+
+  transition:
+    border-color 0.25s ease,
+    color 0.25s ease,
+    background 0.25s ease;
+}
+
+/* ==================================================
+   HOVER
+================================================== */
+
+@media (hover: hover) {
+  .trajectory-page .timeline-content:hover {
+    transform: translateY(-4px);
+
+    border-color: rgba(var(--color-primary-rgb), 0.42);
+
+    background: linear-gradient(
+      145deg,
+      rgba(19, 32, 53, 0.99),
+      rgba(10, 18, 33, 0.99)
+    );
+
+    box-shadow:
+      0 20px 45px rgba(0, 0, 0, 0.2),
+      0 0 25px rgba(var(--color-primary-rgb), 0.045);
+  }
+
+  .trajectory-page .timeline-item:hover .timeline-dot {
+    background: var(--color-primary);
+
+    box-shadow:
+      0 0 0 4px rgba(var(--color-primary-rgb), 0.12),
+      0 0 15px rgba(var(--color-primary-rgb), 0.5);
+  }
+
+  .trajectory-page .technology-list span:hover {
+    border-color: rgba(var(--color-primary-rgb), 0.35);
+    background: rgba(var(--color-primary-rgb), 0.08);
+    color: var(--color-primary);
+  }
+}
+
+/* ==================================================
+   ENCERRAMENTO
+================================================== */
+
+.trajectory-page .trajectory-end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  margin-top: clamp(60px, 8vw, 90px);
+  padding-top: 28px;
+
+  border-top: 1px solid var(--tr-border);
+}
+
+.trajectory-page .trajectory-end p {
+  margin: 0;
+
+  color: var(--tr-muted);
+
+  font-size: 0.9rem;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.trajectory-page .end-indicator {
+  width: 8px;
+  height: 8px;
+  flex: 0 0 8px;
+
+  border-radius: 50%;
+
+  background: var(--color-primary);
+  box-shadow: 0 0 12px rgba(var(--color-primary-rgb), 0.5);
+}
+
+/* ==================================================
+   TABLETS
+================================================== */
+
+@media (max-width: 800px) and (min-width: 561px) {
+  .trajectory-page .container {
+    width: calc(100% - 40px);
+  }
+
+  .trajectory-page .timeline {
+    gap: 22px;
+  }
+
+  .trajectory-page .timeline::before {
+    left: 134px;
+  }
+
+  .trajectory-page .timeline-item {
+    grid-template-columns: 112px minmax(0, 1fr);
+    gap: 22px;
+  }
+
+  .trajectory-page .timeline-date {
+    font-size: 0.75rem;
+  }
+
+  .trajectory-page .timeline-dot {
+    right: -29px;
+  }
+
+  .trajectory-page .timeline-content {
+    padding: 24px;
+    border-radius: 18px;
+  }
+}
+
+/* ==================================================
+   CELULARES
+================================================== */
+
+@media (max-width: 560px) {
+  .trajectory-page {
+    padding: 54px 0;
+  }
+
+  .trajectory-page .container {
+    width: calc(100% - 32px);
+  }
+
+  .trajectory-page > .container > .page-intro {
+    margin-bottom: 55px;
+  }
+
+  .trajectory-page .page-intro h1 {
+    font-size: clamp(2.7rem, 12vw, 3.8rem);
+  }
+
+  .trajectory-page .page-lead {
+    margin-top: 18px;
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+
+  .trajectory-page .trajectory-section {
+    margin-top: 62px;
+  }
+
+  .trajectory-page .section-heading {
+    margin-bottom: 28px;
+  }
+
+  .trajectory-page .section-heading h2 {
+    font-size: clamp(1.8rem, 8vw, 2.4rem);
+  }
+
+  .trajectory-page .section-heading > p {
+    font-size: 0.93rem;
+  }
+
+  /* Timeline lateral no celular */
+
+  .trajectory-page .timeline {
+    gap: 23px;
+    padding: 0 0 0 23px;
+  }
+
+  .trajectory-page .timeline::before {
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+  }
+
+  .trajectory-page .timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 11px;
+
+    padding: 0;
+  }
+
+  .trajectory-page .timeline-date {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    min-height: 0;
+    padding: 0;
+
+    font-size: 0.78rem;
+    text-align: left;
+  }
+
+  .trajectory-page .timeline-dot {
+    top: 1px;
+    right: auto;
+    left: -24px;
+
+    width: 12px;
+    height: 12px;
+    flex-basis: 12px;
+  }
+
+  .trajectory-page .timeline-content {
+    width: 100%;
+    padding: 21px 18px;
+
+    border-radius: 16px;
+  }
+
+  .trajectory-page .timeline-card-top {
+    gap: 10px;
+    margin-bottom: 19px;
+  }
+
+  .trajectory-page .timeline-tag {
+    font-size: 0.66rem;
+  }
+
+  .trajectory-page .timeline-content h3 {
+    font-size: 1.08rem;
+  }
+
+  .trajectory-page .timeline-content .company {
+    margin-bottom: 16px;
+    font-size: 0.83rem;
+  }
+
+  .trajectory-page .timeline-description {
+    font-size: 0.9rem;
+    line-height: 1.85;
+  }
+
+  .trajectory-page .timeline-footer {
+    margin-top: 20px;
+    padding-top: 15px;
+    font-size: 0.72rem;
+  }
+
+  .trajectory-page .technology-list {
+    gap: 7px;
+  }
+
+  .trajectory-page .technology-list span {
+    padding: 7px 9px;
+    font-size: 0.7rem;
+  }
+
+  .trajectory-page .trajectory-end {
+    margin-top: 55px;
+  }
+
+  .trajectory-page .trajectory-end p {
+    font-size: 0.82rem;
+  }
+}
+
+/* ==================================================
+   CELULARES PEQUENOS
+================================================== */
+
+@media (max-width: 360px) {
+  .trajectory-page .container {
+    width: calc(100% - 24px);
+  }
+
+  .trajectory-page .timeline {
+    padding-left: 21px;
+  }
+
+  .trajectory-page .timeline-dot {
+    left: -22px;
+  }
+
+  .trajectory-page .timeline-content {
+    padding: 17px 13px;
+  }
+
+  .trajectory-page .timeline-card-top {
+    align-items: flex-start;
+  }
+
+  .trajectory-page .timeline-index {
+    font-size: 0.7rem;
+  }
+
+  .trajectory-page .timeline-content h3 {
+    font-size: 1rem;
+  }
+}
+
+/* ==================================================
+   ACESSIBILIDADE
+================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .trajectory-page *,
+  .trajectory-page *::before,
+  .trajectory-page *::after {
+    scroll-behavior: auto !important;
+    animation: none !important;
+    transition: none !important;
+  }
 }

@@ -41,119 +41,389 @@
     </div>
   </header>
 
-  <main>
+
+  <main class="home-page">
+
+    <!-- HERO: APRESENTAÇÃO -->
     <section class="hero container">
+
       <div class="hero-copy reveal">
-        <p class="hero-meta"><span>Front-End</span> · Osasco / SP · Disponível para Oportunidades</p>
-        <h1>Bruno Henrique</h1>
-        <p class="hero-role">Desenvolvedor Front-End</p>
+
+        <div class="hero-meta">
+          <span class="hero-meta-tag">Front-End</span>
+          <span>Osasco, SP</span>
+          <span class="hero-availability">
+            Aberto a oportunidades
+          </span>
+        </div>
+
+        <p class="hero-greeting">Olá, eu sou</p>
+
+        <h1>
+          Bruno Henrique<span class="hero-title-dot">.</span>
+        </h1>
+
+        <h2 class="hero-role">
+          Desenvolvedor <span>Front-End</span>
+        </h2>
+
         <p class="hero-text">
-          Desenvolvedor Front-End em formação, com foco em interfaces modernas, responsivas e intuitivas. Tenho praticado HTML, CSS e JavaScript em projetos próprios, com atenção à organização do código e à experiência do usuário.
-          <br /><br />
-          Busco minha primeira oportunidade profissional na área de tecnologia para aplicar meus conhecimentos em
-          projetos reais, adquirir experiência prática e evoluir continuamente como desenvolvedor.
+          Sou desenvolvedor Front-End em formação e gosto de transformar
+          ideias em experiências digitais modernas, funcionais e responsivas.
+          Tenho praticado HTML, CSS e JavaScript em projetos próprios,
+          buscando melhorar a organização do código e a experiência do usuário.
         </p>
 
+        <p class="hero-text hero-text-secondary">
+          Estou em busca da minha primeira oportunidade profissional na área
+          de tecnologia para contribuir com projetos reais, aprender com
+          outros profissionais e continuar evoluindo como desenvolvedor.
+        </p>
+
+        <!-- AÇÕES PRINCIPAIS -->
         <div class="hero-actions">
-          <a href="projetos.html" class="btn btn-primary">Ver projetos <span aria-hidden="true">↗</span></a>
-          <a href="https://github.com/IBrunooDev" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub <span aria-hidden="true">↗</span></a>
-          <a href="src/docs/(CV) - Bruno Dev Novo.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Baixar currículo</a>
+
+          <a href="projetos.html" class="btn btn-primary">
+            <span>Explorar projetos</span>
+            <span class="btn-arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a href="https://github.com/IBrunooDev" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <i class="devicon-github-original" aria-hidden="true"></i>
+            <span>Meu GitHub</span>
+          </a>
+
+          <a href="src/docs/(CV) - Bruno Dev Novo.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+            <span>Ver currículo</span>
+            <span aria-hidden="true">↓</span>
+          </a>
+
         </div>
+
+        <div class="hero-social-proof">
+          <span class="hero-social-line"></span>
+          <p>Aprendendo, construindo e evoluindo a cada projeto.</p>
+        </div>
+
       </div>
+
+      <!-- IMAGEM DE PERFIL -->
       <div class="hero-visual reveal">
+
+        <div class="hero-visual-glow"></div>
+
         <div class="hero-frame">
-          <img src="src/img/Icon-BrunoH-V2.png" alt="Bruno Henrique" />
-          <span class="hero-caption">IBrunooDev</span>
+          <div class="hero-frame-top">
+            <span class="hero-frame-label">PORTFÓLIO / 2026</span>
+            <span class="hero-frame-indicator"></span>
+          </div>
+
+          <div class="hero-image-wrap">
+            <img src="src/img/Icon-BrunoH-V2.png" alt="Imagem de apresentação de Bruno Henrique" fetchpriority="high" />
+          </div>
+
+          <div class="hero-caption">
+            <div>
+              <span class="hero-caption-label">DESENVOLVIMENTO WEB</span>
+              <strong>IBrunooDev</strong>
+            </div>
+
+            <span class="hero-caption-icon" aria-hidden="true">↗</span>
+          </div>
         </div>
+
+        <div class="hero-floating-card">
+          <span class="hero-floating-icon">
+            <i class="devicon-javascript-plain colored" aria-hidden="true"></i>
+            <p>🍀</p>
+          </span>
+
+          <div>
+            <strong>Construindo projetos</strong>
+            <span>Uma linha de código por vez</span>
+          </div>
+        </div>
+
       </div>
+
     </section>
 
-    <div class="status-strip">
-      <div class="status-item">
-        <span class="status-label">Foco</span>
-        <span class="status-value">Interfaces e front-end</span>
-      </div>
-      <div class="status-item">
-        <span class="status-label">Base</span>
-        <span class="status-value">HTML, CSS e JavaScript</span>
-      </div>
-      <div class="status-item">
-        <span class="status-label">Estudo atual</span>
-        <span class="status-value">React, Next.js e TypeScript</span>
-      </div>
-    </div>
+    <!-- RESUMO PROFISSIONAL -->
+    <section class="status-strip container" aria-label="Resumo profissional">
 
+      <div class="status-item">
+        <span class="status-icon">
+          <i class="devicon-html5-plain" aria-hidden="true"></i>
+          <p>💻</p>
+        </span>
+
+        <div class="status-content">
+          <span class="status-label">Minha base</span>
+          <strong class="status-value">HTML, CSS e JavaScript</strong>
+        </div>
+      </div>
+
+      <div class="status-item">
+        <span class="status-icon">
+          <i class="devicon-react-original" aria-hidden="true"></i>
+          <p>📓</p>
+        </span>
+
+        <div class="status-content">
+          <span class="status-label">Em aprendizado</span>
+          <strong class="status-value">React, Next.js e TypeScript</strong>
+        </div>
+      </div>
+
+      <div class="status-item">
+        <span class="status-icon">
+          <i class="devicon-github-original" aria-hidden="true"></i>
+          <p>📝</p>
+        </span>
+
+        <div class="status-content">
+          <span class="status-label">Meu objetivo</span>
+          <strong class="status-value">Crescer na área de tecnologia</strong>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- PROJETOS EM DESTAQUE -->
     <section class="home-block container">
+
       <div class="home-block-head reveal">
-        <div>
-          <p class="page-kicker">Projetos em destaque</p>
-          <h2 class="section-title">Projetos que mostram minha evolução</h2>
+
+        <div class="home-heading-copy">
+          <span class="home-section-label">MEU TRABALHO</span>
+
+          <h2 class="section-title">
+            Projetos que transformam
+            <span>ideias em prática.</span>
+          </h2>
         </div>
-        <p>Aplicações e interfaces que desenvolvi enquanto pratico programação, organização de código e construção de experiências web.</p>
+
+        <div class="home-heading-description">
+          <p>
+            Alguns dos projetos que desenvolvi durante meus estudos,
+            explorando interfaces, funcionalidades e diferentes tecnologias.
+          </p>
+
+          <a href="projetos.html" class="all-projects-link">
+            Ver todos os projetos
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
       </div>
+
       <div class="featured-grid">
+
+        <!-- PROJETO 1: PORTFÓLIO -->
         <article class="featured-card reveal">
-          <img src="src/img/Img-Projeto-LGCWIN.png" alt="Prévia do bot LGC Win para Discord" loading="lazy" />
-          <div class="featured-body">
-            <p class="page-kicker">Bot para Discord</p>
-            <h3>BOT LGC Win</h3>
-            <p>Bot de rifas para Discord com comandos, cupons, gerenciamento de rifas e integração com banco de dados.</p>
-            <div class="tech-tags"><span>Node.js</span><span>TypeScript</span><span>Discord.js</span><span>Supabase</span></div>
-            <a class="featured-link" href="https://github.com/IBrunooDev/Projeto-BOT" target="_blank" rel="noopener noreferrer">Ver código <span aria-hidden="true">↗</span></a>
+
+          <div class="featured-media">
+            <img src="src/img/Img-Projeto-Portfolio.png" alt="Prévia do portfólio pessoal de Bruno Henrique"
+              loading="lazy" />
+
+            <span class="featured-number">01</span>
+            <span class="featured-project-type">SITE PESSOAL</span>
           </div>
-        </article>
-        <article class="featured-card reveal">
-          <img src="src/img/Img-Projeto-RIFA.GG.png" alt="Prévia do projeto web RIFA.GG" loading="lazy" />
+
           <div class="featured-body">
-            <p class="page-kicker">Aplicação web</p>
-            <h3>RIFA.GG</h3>
-            <p>Projeto de plataforma de rifas, com interface web e funcionalidades de gerenciamento conforme implementadas no projeto.</p>
-            <div class="tech-tags"><span>Next.js</span><span>TypeScript</span><span>PostgreSQL</span><span>Supabase</span></div>
-            <a class="featured-link" href="https://github.com/IBrunooDev/Projeto-RIFA.GG" target="_blank" rel="noopener noreferrer">Ver código <span aria-hidden="true">↗</span></a>
-          </div>
-        </article>
-        <article class="featured-card reveal">
-          <img src="src/img/Img-Projeto-Portfolio.png" alt="Prévia do portfólio pessoal" loading="lazy" />
-          <div class="featured-body">
-            <p class="page-kicker">Site pessoal</p>
+
+            <div class="featured-title-row">
+              <span class="featured-category">Portfólio</span>
+              <span class="featured-status">Projeto pessoal</span>
+            </div>
+
             <h3>Portfólio pessoal</h3>
-            <p>Site com múltiplas páginas para apresentar projetos, trajetória de estudos, habilidades e formas de contato.</p>
-            <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-            <a class="featured-link" href="https://github.com/IBrunooDev/Projeto-Portfolio" target="_blank" rel="noopener noreferrer">Ver código <span aria-hidden="true">↗</span></a>
+
+            <p>
+              Meu espaço para apresentar projetos, habilidades, trajetória
+              de estudos e evolução no desenvolvimento web.
+            </p>
+
+            <div class="tech-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <div class="featured-actions">
+              <a class="featured-link" href="https://ibrunoodev.netlify.app/" target="_blank" rel="noopener noreferrer">
+                Ver projeto <span aria-hidden="true">↗</span>
+              </a>
+
+              <a class="featured-code-link" href="https://github.com/IBrunooDev/Projeto-Portfolio" target="_blank"
+                rel="noopener noreferrer" aria-label="Ver código do portfólio no GitHub">
+                <i class="devicon-github-original" aria-hidden="true"></i>
+                Código
+              </a>
+            </div>
+
           </div>
         </article>
+
+        <!-- PROJETO 2: RIFA.GG -->
+        <article class="featured-card reveal">
+
+          <div class="featured-media">
+            <img src="src/img/Img-Projeto-RIFA.GG.png" alt="Prévia da plataforma web RIFA.GG" loading="lazy" />
+
+            <span class="featured-number">02</span>
+            <span class="featured-project-type">APLICAÇÃO WEB</span>
+          </div>
+
+          <div class="featured-body">
+
+            <div class="featured-title-row">
+              <span class="featured-category">Plataforma web</span>
+              <span class="featured-status">Projeto pessoal</span>
+            </div>
+
+            <h3>RIFA.GG</h3>
+
+            <p>
+              Projeto de uma plataforma de rifas, com interface web e
+              funcionalidades de gerenciamento desenvolvidas no projeto.
+            </p>
+
+            <div class="tech-tags">
+              <span>Next.js</span>
+              <span>TypeScript</span>
+              <span>Supabase</span>
+            </div>
+
+            <div class="featured-actions">
+              <a class="featured-link" href="https://github.com/IBrunooDev/Projeto-RIFA.GG" target="_blank"
+                rel="noopener noreferrer">
+                Ver código <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- PROJETO 3: BOT LGC WIN -->
+        <article class="featured-card reveal">
+
+          <div class="featured-media">
+            <img src="src/img/Img-Projeto-LGCWIN.png" alt="Prévia do bot LGC Win para Discord" loading="lazy" />
+
+            <span class="featured-number">03</span>
+            <span class="featured-project-type">BOT PARA DISCORD</span>
+          </div>
+
+          <div class="featured-body">
+
+            <div class="featured-title-row">
+              <span class="featured-category">Automação</span>
+              <span class="featured-status">Projeto pessoal</span>
+            </div>
+
+            <h3>BOT LGC Win</h3>
+
+            <p>
+              Bot para Discord com funcionalidades de rifas, comandos,
+              cupons, gerenciamento e integração com banco de dados.
+            </p>
+
+            <div class="tech-tags">
+              <span>Node.js</span>
+              <span>TypeScript</span>
+              <span>Discord.js</span>
+              <span>Supabase</span>
+            </div>
+
+            <div class="featured-actions">
+              <a class="featured-link" href="https://github.com/IBrunooDev/Projeto-BOT" target="_blank"
+                rel="noopener noreferrer">
+                Ver código <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+
+          </div>
+        </article>
+
       </div>
+
     </section>
 
+    <!-- CONSOLE INTERATIVO -->
     <section class="home-block container">
+
       <div class="console-intro">
-        <div class="reveal">
-          <p class="page-kicker">Console</p>
-          <h2>Um terminal, só que como ferramenta</h2>
+
+        <div class="console-copy reveal">
+
+          <span class="home-section-label">UMA EXPERIÊNCIA DIFERENTE</span>
+
+          <h2 class="section-title">
+            Explore meu portfólio
+            <span>pelo terminal.</span>
+          </h2>
+
           <p>
-            A navegação principal está no menu. O console oferece acesso rápido a informações e páginas por meio de
-            comandos.
+            Além do menu tradicional, você pode usar o console para
+            consultar informações e acessar páginas por meio de comandos.
           </p>
+
+          <div class="console-tip">
+            <span class="console-tip-icon" aria-hidden="true">⌘</span>
+            <p>
+              Digite <code>help</code> no terminal para descobrir os
+              comandos disponíveis.
+            </p>
+          </div>
+
         </div>
+
         <div class="terminal reveal">
+
           <div class="terminal-bar">
-            <div class="terminal-dots" aria-hidden="true"><i></i><i></i><i></i></div>
-            <span class="terminal-title">root@ibrunoodev — bash</span>
+
+            <div class="terminal-dots" aria-hidden="true">
+              <i></i>
+              <i></i>
+              <i></i>
+            </div>
+
+            <span class="terminal-title">ibrunoodev — terminal</span>
+
+            <span class="terminal-language">CLI</span>
+
           </div>
+
           <div class="terminal-screen" id="terminal-screen">
+
             <div class="terminal-output">
-              <div class="terminal-line terminal-welcome">sessão iniciada.</div>
-              <div class="terminal-line terminal-muted">digite help para ver os comandos.</div>
+              <div class="terminal-line terminal-welcome">
+                Bem-vindo ao terminal do IBRunooDev.
+              </div>
+
+              <div class="terminal-line terminal-muted">
+                Digite help para ver os comandos disponíveis.
+              </div>
             </div>
+
             <div class="terminal-row">
-              <span class="terminal-prompt">root@ibrunoodev:~$</span>
-              <input id="terminal-input" class="terminal-input" type="text" autocomplete="off" placeholder="whoami" />
+              <span class="terminal-prompt">bruno@dev:~$</span>
+
+              <input id="terminal-input" class="terminal-input" type="text" autocomplete="off" spellcheck="false"
+                aria-label="Digite um comando do terminal" placeholder="help" />
             </div>
+
           </div>
+
         </div>
+
       </div>
+
     </section>
+
   </main>
+
 
   <footer class="site-footer">
     <div class="container">

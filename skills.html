@@ -11,7 +11,9 @@
   <link rel="stylesheet" href="src/css/global.css">
   <link rel="stylesheet" href="src/css/navbar.css">
   <link rel="stylesheet" href="src/css/skills.css">
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="src/css/redesign.css">
 </head>
 
@@ -37,31 +39,276 @@
     </div>
   </header>
 
-  <main class="page">
-    <section class="container">
-      <div class="page-intro reveal">
-        <p class="page-kicker">Skills</p>
-        <h1>Ferramentas do dia a dia</h1>
-        <p class="page-lead">Tecnologias e ferramentas que utilizo no desenvolvimento e organização dos meus projetos.</p>
+
+  <main class="page skills-page">
+    <section class="skills-section">
+
+      <!-- Cabeçalho -->
+      <header class="skills-header reveal">
+        <span class="skills-eyebrow">
+          <span class="eyebrow-dot"></span>
+          DESENVOLVIMENTO WEB
+        </span>
+
+        <h1>
+          Tecnologias que uso para criar
+          <span>experiências digitais.</span>
+        </h1>
+
+        <p class="skills-description">
+          Conheça as tecnologias que utilizo nos meus projetos e as
+          ferramentas que estou estudando para evoluir como desenvolvedor.
+        </p>
+
+        <!-- Resumo das habilidades -->
+        <div class="skills-stats">
+          <div class="skills-stat">
+            <span class="stat-icon known-icon">
+              <p class="stat-label">👑</p>
+            </span>
+
+            <div class="stat-content">
+              <strong>03 tecnologias</strong>
+              <span>Já utilizo</span>
+            </div>
+          </div>
+
+          <div class="skills-stat">
+            <span class="stat-icon learning-icon">
+              <p class="stat-label">❌</p>
+            </span>
+
+            <div class="stat-content">
+              <strong>06 tecnologias</strong>
+              <span>Em aprendizado</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Tecnologias que já utilizo -->
+      <section class="skills-group reveal">
+        <div class="skills-group-header">
+          <div class="group-heading">
+            <span class="group-indicator known-indicator"></span>
+
+            <div>
+              <h2>Minha base atual</h2>
+              <p>Tecnologias que já utilizo nos meus projetos.</p>
+            </div>
+          </div>
+
+          <span class="group-count">03 SKILLS</span>
+        </div>
+
+        <div class="skills-grid">
+
+          <article class="skill-card skill-known">
+            <div class="skill-card-top">
+              <div class="skill-logo">
+                <i class="devicon-html5-plain colored"></i>
+              </div>
+
+              <span class="skill-status">Já utilizo</span>
+            </div>
+
+            <h3>HTML5</h3>
+            <p>Estruturação de páginas e conteúdos para a web.</p>
+
+            <div class="skill-card-footer">
+              <span class="skill-category">Estrutura</span>
+              <i class="devicon-html5-plain"></i>
+            </div>
+          </article>
+
+          <article class="skill-card skill-known">
+            <div class="skill-card-top">
+              <div class="skill-logo">
+                <i class="devicon-css3-plain colored"></i>
+              </div>
+
+              <span class="skill-status">Já utilizo</span>
+            </div>
+
+            <h3>CSS3</h3>
+            <p>Estilização, layouts, animações e responsividade.</p>
+
+            <div class="skill-card-footer">
+              <span class="skill-category">Estilização</span>
+              <i class="devicon-css3-plain"></i>
+            </div>
+          </article>
+
+          <article class="skill-card skill-known">
+            <div class="skill-card-top">
+              <div class="skill-logo">
+                <i class="devicon-javascript-plain colored"></i>
+              </div>
+
+              <span class="skill-status">Já utilizo</span>
+            </div>
+
+            <h3>JavaScript</h3>
+            <p>Lógica de programação e interatividade nas páginas.</p>
+
+            <div class="skill-card-footer">
+              <span class="skill-category">Programação</span>
+              <i class="devicon-javascript-plain"></i>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Tecnologias que estou estudando -->
+      <section class="skills-group reveal">
+        <div class="skills-group-header">
+          <div class="group-heading">
+            <span class="group-indicator learning-indicator"></span>
+
+            <div>
+              <h2>Em evolução</h2>
+              <p>Tecnologias que estou estudando e explorando.</p>
+            </div>
+          </div>
+
+          <span class="group-count">06 SKILLS</span>
+        </div>
+
+        <div class="skills-grid">
+
+          <article class="skill-card skill-learning">
+            <div class="skill-card-top">
+              <div class="skill-logo">
+                <i class="devicon-typescript-plain colored"></i>
+              </div>
+
+              <span class="skill-status">Estudando</span>
+            </div>
+
+            <h3>TypeScript</h3>
+            <p>Tipagem e desenvolvimento com JavaScript.</p>
+
+            <div class="skill-card-footer">
+              <span class="skill-category">Linguagem</span>
+              <i class="devicon-typescript-plain"></i>
+            </div>
+          </article>
+
+          <article class="skill-card skill-learning">
+            <div class="skill-card-top">
+              <div class="skill-logo">
+                <i class="devicon-react-original colored"></i>
+              </div>
+
+              <span class="skill-status">Estudando</span>
+            </div>
+
+            <h3>React</h3>
+            <p>Criação de interfaces usando componentes.</p>
+
+            <div class="skill-card-footer">
+              <span class="skill-category">Biblioteca</span>
+              <i class="devicon-react-original"></i>
+            </div>
+          </article>
+
+          <article class="skill-card skill-learning">
+            <div class="skill-card-top">
+              <div class="skill-logo">
+                <i class="devicon-nextjs-plain"></i>
+              </div>
+
+              <span class="skill-status">Estudando</span>
+            </div>
+
+            <h3>Next.js</h3>
+            <p>Desenvolvimento de aplicações web com React.</p>
+
+            <div class="skill-card-footer">
+              <span class="skill-category">Framework</span>
+              <i class="devicon-nextjs-plain"></i>
+            </div>
+          </article>
+
+          <article class="skill-card skill-learning">
+            <div class="skill-card-top">
+              <div class="skill-logo">
+                <i class="devicon-tailwindcss-original colored"></i>
+              </div>
+
+              <span class="skill-status">Estudando</span>
+            </div>
+
+            <h3>Tailwind CSS</h3>
+            <p>Estilização de interfaces com classes utilitárias.</p>
+
+            <div class="skill-card-footer">
+              <span class="skill-category">Estilização</span>
+              <i class="devicon-tailwindcss-original"></i>
+            </div>
+          </article>
+
+          <article class="skill-card skill-learning">
+            <div class="skill-card-top">
+              <div class="skill-logo">
+                <i class="devicon-git-plain colored"></i>
+              </div>
+
+              <span class="skill-status">Estudando</span>
+            </div>
+
+            <h3>Git</h3>
+            <p>Versionamento e acompanhamento de alterações no código.</p>
+
+            <div class="skill-card-footer">
+              <span class="skill-category">Versionamento</span>
+              <i class="devicon-git-plain"></i>
+            </div>
+          </article>
+
+          <article class="skill-card skill-learning">
+            <div class="skill-card-top">
+              <div class="skill-logo">
+                <i class="devicon-github-original"></i>
+              </div>
+
+              <span class="skill-status">Estudando</span>
+            </div>
+
+            <h3>GitHub</h3>
+            <p>Organização de repositórios e compartilhamento de projetos.</p>
+
+            <div class="skill-card-footer">
+              <span class="skill-category">Plataforma</span>
+              <i class="devicon-github-original"></i>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Encerramento -->
+      <div class="skills-note reveal">
+        <span class="skills-note-icon">
+          <i class="devicon-git-plain"></i>
+        </span>
+
+        <p>
+          <strong>Sempre evoluindo.</strong>
+          Cada projeto é uma oportunidade de aprender, praticar e melhorar
+          minhas habilidades como desenvolvedor.
+        </p>
       </div>
-      <div class="skills-grid reveal">
-        <div class="skill-card"><i class="devicon-html5-plain colored"></i><span>HTML</span></div>
-        <div class="skill-card"><i class="devicon-css3-plain colored"></i><span>CSS</span></div>
-        <div class="skill-card"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
-        <div class="skill-card"><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></div>
-        <div class="skill-card"><i class="devicon-react-original colored"></i><span>React</span></div>
-        <div class="skill-card"><i class="devicon-nextjs-plain"></i><span>Next.js</span></div>
-        <div class="skill-card"><i class="devicon-tailwindcss-original colored"></i><span>Tailwind CSS</span></div>
-        <div class="skill-card"><i class="devicon-git-plain colored"></i><span>Git</span></div>
-        <div class="skill-card"><i class="devicon-github-plain"></i><span>GitHub</span></div>
-      </div>
+
     </section>
   </main>
+
 
   <footer class="site-footer">
     <div class="container">
       <div class="social-links">
-      <p>&copy; 2026 Bruno Henrique. Todos os direitos reservados.</p>
+        <p>&copy; 2026 Bruno Henrique. Todos os direitos reservados.</p>
         <a href="https://www.linkedin.com/in/brunocarus/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://github.com/IBrunooDev" target="_blank" rel="noopener">GitHub</a>
         <a href="https://www.instagram.com/bruu.dev/" target="_blank" rel="noopener">Instagram</a>

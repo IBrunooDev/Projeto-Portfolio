@@ -1,60 +1,643 @@
-/*
-  SOBRE.CSS
-*/
+
+/* ==========================================
+   SOBRE MIM — BASE
+========================================== */
+
+.about-page {
+  --about-text: #f1f5f9;
+  --about-muted: #94a3b8;
+  --about-border: rgba(148, 163, 184, 0.15);
+  --about-card: rgba(15, 23, 42, 0.7);
+  --about-blue: var(--color-primary);
+
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  color: var(--about-text);
+}
+
+.about-page *,
+.about-page *::before,
+.about-page *::after {
+  box-sizing: border-box;
+}
+
+.about-section {
+  position: relative;
+  width: min(1120px, calc(100% - 48px));
+  margin-inline: auto;
+  padding: 80px 0;
+}
+
+/* Brilho decorativo */
+
+.about-section::before {
+  position: absolute;
+  top: 120px;
+  right: -180px;
+  z-index: -1;
+
+  width: 350px;
+  height: 350px;
+
+  background: rgba(var(--color-primary-rgb), 0.08);
+  border-radius: 50%;
+  filter: blur(100px);
+
+  content: "";
+  pointer-events: none;
+}
+
+.about-section::after {
+  position: absolute;
+  bottom: 80px;
+  left: -180px;
+  z-index: -1;
+
+  width: 300px;
+  height: 300px;
+
+  background: rgba(var(--color-primary-rgb), 0.07);
+  border-radius: 50%;
+  filter: blur(100px);
+
+  content: "";
+  pointer-events: none;
+}
+
+/* ==========================================
+   CABEÇALHO
+========================================== */
+
+.about-header {
+  max-width: 780px;
+  margin-bottom: 55px;
+}
+
+.about-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 20px;
+  padding: 9px 13px;
+
+  color: var(--color-primary-light);
+  background: rgba(var(--color-primary-rgb), 0.09);
+  border: 1px solid rgba(var(--color-primary-rgb), 0.22);
+  border-radius: 50px;
+
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.about-kicker-dot {
+  width: 7px;
+  height: 7px;
+
+  background: var(--about-blue);
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(var(--color-primary-rgb), 0.7);
+}
+
+.about-header h1 {
+  margin: 0 0 18px;
+
+  color: var(--about-text);
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -1.8px;
+}
+
+.about-header h1 span {
+  display: block;
+
+  background: linear-gradient(
+    90deg,
+    var(--color-primary),
+    var(--color-primary),
+    var(--color-primary-hover)
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.about-lead {
+  max-width: 620px;
+  margin: 0;
+
+  color: var(--about-muted);
+  font-size: 1rem;
+  line-height: 1.85;
+}
+
+/* ==========================================
+   LAYOUT PRINCIPAL
+========================================== */
 
 .about-grid {
   display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
-  gap: var(--space-2xl);
-  align-items: start;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  align-items: center;
+  gap: 65px;
 }
 
-.about-image img {
+/* ==========================================
+   FOTO
+========================================== */
+
+.about-visual {
+  position: relative;
+  min-width: 0;
+  max-width: 440px;
   width: 100%;
+  margin-inline: auto;
+}
+
+.about-image-frame {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
   aspect-ratio: 4 / 5;
-  object-fit: cover;
-  border: var(--border-width) solid var(--color-border-strong);
+  width: 100%;
+
+  background: #111827;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 24px;
+
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.25);
 }
 
-.about-text h2 {
-  font-size: var(--fs-2xl);
-  letter-spacing: -0.03em;
-  margin-bottom: var(--space-lg);
-}
-
-.about-text p {
-  color: var(--color-text-muted);
-  margin-bottom: var(--space-md);
-}
-
-.info-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-md);
-  margin-top: var(--space-xl);
-  padding-top: var(--space-lg);
-  border-top: var(--border-width) solid var(--color-border);
-}
-
-.info-label {
+.about-image-frame img {
   display: block;
-  font-family: var(--font-mono);
-  font-size: var(--fs-xs);
-  color: var(--color-text-muted);
-  margin-bottom: var(--space-2xs);
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  transition: transform 0.5s ease;
 }
 
-.info-value {
-  font-weight: 500;
+.about-image-overlay {
+  position: absolute;
+  inset: 35% 0 0;
+  z-index: 1;
+
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(2, 6, 23, 0.9)
+  );
+
+  pointer-events: none;
 }
 
-@media (max-width: 800px) {
-  .about-grid,
-  .info-row {
+.about-image-caption {
+  position: absolute;
+  right: 16px;
+  bottom: 18px;
+  left: 16px;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 15px;
+
+  background: rgba(15, 23, 42, 0.68);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.about-avatar-status {
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+
+  background: #4ade80;
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(74, 222, 128, 0.5);
+}
+
+.about-image-caption div {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.about-image-caption strong {
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.about-image-caption div span {
+  color: #cbd5e1;
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
+
+.about-image-decoration {
+  position: absolute;
+  top: 22px;
+  right: -16px;
+  bottom: -16px;
+  left: 22px;
+  z-index: -1;
+
+  border: 1px solid rgba(var(--color-primary-rgb), 0.3);
+  border-radius: 24px;
+}
+
+/* ==========================================
+   TEXTO DE APRESENTAÇÃO
+========================================== */
+
+.about-content {
+  min-width: 0;
+}
+
+.about-content-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  margin-bottom: 17px;
+
+  color: var(--about-blue);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.about-content-label i {
+  font-size: 1rem;
+}
+
+.about-content h2 {
+  margin: 0 0 23px;
+
+  color: var(--about-text);
+  font-size: clamp(1.8rem, 3vw, 2.55rem);
+  font-weight: 800;
+  line-height: 1.22;
+  letter-spacing: -1px;
+}
+
+.about-content h2 span {
+  color: var(--about-blue);
+}
+
+.about-content > p {
+  margin: 0 0 17px;
+
+  color: var(--about-muted);
+  font-size: 0.94rem;
+  line-height: 1.9;
+}
+
+/* ==========================================
+   INFORMAÇÕES
+========================================== */
+
+.about-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+
+  margin-top: 30px;
+}
+
+.about-info-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  min-width: 0;
+  padding: 15px 13px;
+
+  background: var(--about-card);
+  border: 1px solid var(--about-border);
+  border-radius: 14px;
+
+  transition:
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+.about-info-icon {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  place-items: center;
+
+  color: var(--about-blue);
+  background: rgba(var(--color-primary-rgb), 0.1);
+  border-radius: 11px;
+
+  font-size: 1.25rem;
+}
+
+.about-info-text {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.about-info-label {
+  color: var(--about-muted);
+  font-size: 0.72rem;
+}
+
+.about-info-text strong {
+  color: var(--about-text);
+  font-size: 0.81rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+/* ==========================================
+   TECNOLOGIAS
+========================================== */
+
+.about-technologies {
+  margin-top: 27px;
+}
+
+.about-technologies-label {
+  display: block;
+  margin-bottom: 13px;
+
+  color: #cbd5e1;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.about-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.about-tech {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 9px 12px;
+
+  color: #e2e8f0;
+  background: rgba(148, 163, 184, 0.06);
+  border: 1px solid var(--about-border);
+  border-radius: 9px;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.about-tech i {
+  font-size: 1.05rem;
+}
+
+/* ==========================================
+   INTERAÇÕES
+========================================== */
+
+@media (hover: hover) and (pointer: fine) {
+  .about-image-frame:hover img {
+    transform: scale(1.035);
+  }
+
+  .about-info-card:hover {
+    background: rgba(30, 41, 59, 0.8);
+    border-color: rgba(var(--color-primary-rgb), 0.35);
+  }
+}
+
+/* ==========================================
+   TABLETS — ATÉ 900px
+========================================== */
+
+@media (max-width: 900px) {
+  .about-section {
+    width: calc(100% - 40px);
+    padding: 65px 0;
+  }
+
+  .about-header {
+    margin-bottom: 42px;
+  }
+
+  .about-grid {
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    gap: 32px;
+  }
+
+  .about-image-frame {
+    border-radius: 19px;
+  }
+
+  .about-image-caption {
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    gap: 9px;
+    padding: 11px;
+  }
+
+  .about-image-caption strong {
+    font-size: 0.84rem;
+  }
+
+  .about-image-caption div span {
+    font-size: 0.68rem;
+  }
+
+  .about-content h2 {
+    font-size: clamp(1.65rem, 3vw, 2.1rem);
+  }
+
+  .about-content > p {
+    font-size: 0.87rem;
+    line-height: 1.8;
+  }
+
+  .about-info-grid {
+    grid-template-columns: 1fr;
+    margin-top: 23px;
+  }
+
+  .about-info-card {
+    padding: 12px;
+  }
+
+  .about-technologies {
+    margin-top: 23px;
+  }
+}
+
+/* ==========================================
+   CELULARES — ATÉ 600px
+========================================== */
+
+@media (max-width: 600px) {
+  .about-section {
+    width: calc(100% - 32px);
+    padding: 45px 0 50px;
+  }
+
+  .about-header {
+    margin-bottom: 32px;
+  }
+
+  .about-kicker {
+    margin-bottom: 16px;
+    padding: 8px 11px;
+    font-size: 0.65rem;
+  }
+
+  .about-header h1 {
+    margin-bottom: 15px;
+    font-size: clamp(2rem, 8vw, 2.7rem);
+    line-height: 1.16;
+    letter-spacing: -1px;
+  }
+
+  .about-lead {
+    font-size: 0.9rem;
+    line-height: 1.8;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .about-visual {
+    width: min(100%, 360px);
+  }
+
+  .about-image-frame {
+    aspect-ratio: 4 / 4.3;
+    border-radius: 19px;
+  }
+
+  .about-image-decoration {
+    top: 13px;
+    right: -9px;
+    bottom: -9px;
+    left: 13px;
+    border-radius: 19px;
+  }
+
+  .about-image-caption {
+    right: 12px;
+    bottom: 12px;
+    left: 12px;
+    padding: 13px;
+  }
+
+  .about-content-label {
+    margin-bottom: 14px;
+    font-size: 0.67rem;
+  }
+
+  .about-content h2 {
+    margin-bottom: 19px;
+    font-size: clamp(1.8rem, 7vw, 2.3rem);
+    line-height: 1.22;
+  }
+
+  .about-content > p {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    line-height: 1.85;
+  }
+
+  .about-info-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 25px;
+  }
+
+  .about-info-card {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 13px 11px;
+  }
+
+  .about-info-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+  }
+
+  .about-info-text strong {
+    font-size: 0.78rem;
+  }
+
+  .about-technologies {
+    margin-top: 25px;
+  }
+
+  .about-tech-list {
+    gap: 8px;
+  }
+
+  .about-tech {
+    padding: 8px 10px;
+    font-size: 0.76rem;
+  }
+}
+
+/* ==========================================
+   CELULARES PEQUENOS — ATÉ 360px
+========================================== */
+
+@media (max-width: 360px) {
+  .about-section {
+    width: calc(100% - 24px);
+  }
+
+  .about-header h1 {
+    font-size: 1.9rem;
+  }
+
+  .about-grid {
+    gap: 28px;
+  }
+
+  .about-info-grid {
     grid-template-columns: 1fr;
   }
 
-  .about-image {
-    max-width: 320px;
+  .about-info-card {
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+/* ==========================================
+   ACESSIBILIDADE
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .about-image-frame img,
+  .about-info-card {
+    transition: none;
   }
 }

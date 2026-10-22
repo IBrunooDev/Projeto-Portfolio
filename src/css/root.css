@@ -3,36 +3,39 @@
   Altere as variáveis abaixo para atualizar o visual do site inteiro.
 */
 
+/* Sistema visual global: azul profissional sobre base navy. */
 :root {
-  /* Cores principais */
-  --color-primary: #28d8c3;
-  --color-primary-hover: #51e7d5;
-  --color-primary-soft: rgba(40, 216, 195, 0.10);
-  --color-secondary: #c9a227;
+  /* Cor principal e estados */
+  --color-primary: #60a5fa;
+  --color-primary-hover: #93c5fd;
+  --color-primary-light: #bfdbfe;
+  --color-primary-rgb: 96, 165, 250;
+  --color-primary-soft: rgba(var(--color-primary-rgb), 0.12);
+  --color-secondary: var(--color-primary);
 
-  /* Cores de fundo */
-  --color-bg: #071014;
-  --color-bg-elevated: #11151b;
-  --color-bg-card: #14181f;
-  --color-bg-header: rgba(7, 16, 20, 0.92);
-  --color-bg-footer: #060d10;
+  /* Superfícies */
+  --color-bg: #0b1120;
+  --color-bg-elevated: #111827;
+  --color-bg-card: #0f172a;
+  --color-bg-header: rgba(11, 17, 32, 0.92);
+  --color-bg-footer: #080d18;
 
-  /* Cores de texto */
-  --color-text: #e8eaee;
-  --color-text-muted: #8d949e;
-  --color-text-inverse: #0c0e11;
+  /* Tipografia */
+  --color-text: #f1f5f9;
+  --color-text-muted: #94a3b8;
+  --color-text-inverse: #08111f;
 
-  /* Cores de destaque */
-  --color-accent: #28d8c3;
-  --color-accent-warm: #c9a227;
+  /* Destaques e feedback */
+  --color-accent: var(--color-primary);
+  --color-accent-warm: var(--color-primary);
   --color-success: #6fbf73;
   --color-error: #d36b64;
-  --color-link: #28d8c3;
+  --color-link: var(--color-primary);
 
   /* Bordas */
-  --color-border: rgba(232, 234, 238, 0.08);
-  --color-border-strong: rgba(232, 234, 238, 0.14);
-  --color-border-accent: rgba(40, 216, 195, 0.30);
+  --color-border: rgba(148, 163, 184, 0.12);
+  --color-border-strong: rgba(148, 163, 184, 0.2);
+  --color-border-accent: rgba(var(--color-primary-rgb), 0.35);
 
   /* Fontes */
   --font-sans: "IBM Plex Sans", "Segoe UI", sans-serif;
@@ -60,17 +63,17 @@
   --space-2xl: 3.5rem;
   --space-3xl: 5.5rem;
 
-  /* Bordas e radius */
+  /* Bordas e raios */
   --border-width: 1px;
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 18px;
   --radius-full: 999px;
 
-  /* Sombras */
+  /* Sombras e foco */
   --shadow-sm: 0 8px 24px rgba(0, 0, 0, 0.22);
   --shadow-md: 0 18px 40px rgba(0, 0, 0, 0.32);
-  --shadow-focus: 0 0 0 3px rgba(40, 216, 195, 0.28);
+  --shadow-focus: 0 0 0 3px rgba(var(--color-primary-rgb), 0.3);
 
   /* Transições */
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
@@ -80,20 +83,18 @@
 
   /* Animações */
   --anim-reveal: 480ms var(--ease);
-  --anim-blink: 1s step-end infinite;
 
-  /* Containers */
-  --container-sm: 720px;
-  --container-md: 960px;
-  --container-lg: 1120px;
-  --header-height: 68px;
-  --gutter: clamp(1.25rem, 4vw, 2rem);
+  /* Camadas */
+  --z-header: 1000;
+  --z-overlay: 2000;
+  --z-modal: 2100;
+  --z-player: 1500;
 
-  /* Z-index */
-  --z-header: 100;
-  --z-overlay: 200;
-  --z-modal: 300;
-  --z-player: 90;
+  /* Layout */
+  --header-height: 76px;
+  --container-lg: 1160px;
+  --container-width: 1160px;
+  --gutter: clamp(1rem, 4vw, 2.5rem);
 }
 
 /* Alias para compatibilidade com trechos antigos */

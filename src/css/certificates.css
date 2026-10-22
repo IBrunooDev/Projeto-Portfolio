@@ -39,7 +39,7 @@
 
 .cert-preview {
   height: 180px;
-  background: #0a0c10;
+  background: #0b1120;
   border-bottom: var(--border-width) solid var(--color-border);
   overflow: hidden;
 }

@@ -39,568 +39,380 @@
     </div>
   </header>
 
-  <main class="page">
-    <section class="container">
-      <div class="page-intro reveal">
-        <p class="page-kicker">Projetos</p>
-        <h1>Trabalhos e iniciativas</h1>
-        <p class="page-lead">
-          Confira alguns dos projetos em que trabalhei. Clique nas imagens
-          para ver mais detalhes.
+  <!-- Modal de projeto -->
+
+<main class="page projects-page">
+  <section class="container">
+
+    <!-- INTRODUÇÃO -->
+    <header class="projects-intro reveal">
+      <div class="projects-intro-copy">
+        <p class="page-kicker">
+          <span class="kicker-dot" aria-hidden="true"></span>
+          Projetos & experiências
         </p>
+
+        <h1>Ideias transformadas em <span>projetos.</span></h1>
+
+        <p class="page-lead">
+          Uma seleção de projetos que desenvolvi durante minha jornada na tecnologia,
+          explorando desenvolvimento web, interfaces responsivas e automações.
+        </p>
+
+        <div class="intro-actions">
+          <a class="btn-primary" href="#projects-grid">
+            Explorar projetos <span aria-hidden="true">↓</span>
+          </a>
+          <a class="btn-secondary" href="https://github.com/IBrunooDev" target="_blank" rel="noopener noreferrer">
+            Meu GitHub <span aria-hidden="true">↗</span>
+          </a>
+        </div>
       </div>
-      <div id="project-toolbar" class="project-toolbar reveal"></div>
-      <div id="project-grid" class="project-grid"></div>
-    </section>
-    <!-- =============== -->
 
-    <section class="projects-section">
-
-      <!-- DETALHE SUPERIOR -->
-      <div class="top-line"></div>
-
-      <!-- CABEÇALHO -->
-      <div class="section-header">
-
-        <div>
-          <span class="section-label">
-            // PORTFOLIO
-          </span>
-
-          <h1>MEUS PROJETOS</h1>
-
-          <p>
-            Projetos desenvolvidos durante minha jornada
-            de aprendizado e desenvolvimento.
-          </p>
+      <aside class="projects-overview" aria-label="Resumo dos projetos">
+        <div class="overview-top">
+          <span class="overview-indicator" aria-hidden="true"></span>
+          <span>PAINEL DE PROJETOS</span>
+          <span class="overview-status">ATIVO</span>
         </div>
 
-        <div class="project-count">
-          <span>PROJETOS</span>
+        <div class="overview-number">
+          <strong>09</strong>
+          <span>projetos<br>apresentados</span>
+        </div>
+
+        <div class="overview-divider"></div>
+
+        <div class="overview-detail">
+          <span class="detail-icon" aria-hidden="true">⌘</span>
+          <div>
+            <strong>Desenvolvimento Web</strong>
+            <span>Interfaces, aplicações e automações</span>
+          </div>
+        </div>
+
+        <div class="overview-detail">
+          <span class="detail-icon detail-icon-purple" aria-hidden="true">✳</span>
+          <div>
+            <strong>Aprendizado contínuo</strong>
+            <span>Projetos independentes e prática</span>
+          </div>
+        </div>
+      </aside>
+    </header>
+
+    <!-- CABEÇALHO DA LISTA -->
+    <section class="projects-section" aria-labelledby="projects-heading">
+      <div class="projects-section-heading reveal">
+        <div>
+          <p class="section-eyebrow">// PORTFÓLIO</p>
+          <h2 id="projects-heading">Projetos em destaque<span>.</span></h2>
+          <p>Conheça alguns dos trabalhos, experimentos e sistemas que desenvolvi.</p>
+        </div>
+
+        <div class="project-count" aria-label="9 projetos no total">
+          <span>TOTAL</span>
           <strong>09</strong>
         </div>
-
       </div>
 
+      <div class="projects-grid" id="projects-grid">
 
-      <!-- PROJETOS -->
-      <div class="projects-container">
-
-        <!-- PROJETO 01 -->
-        <article class="project-card">
-
-          <div class="card-corner corner-top-left"></div>
-          <div class="card-corner corner-top-right"></div>
-
+        <!-- 01 — PORTFÓLIO -->
+        <article class="project-card project-card-featured reveal">
           <div class="project-image">
-
-            <img src="src/img/Img-Projeto-Portfolio.png" alt="Projeto 1">
-
-            <div class="image-overlay">
-              <span>01</span>
-            </div>
-
+            <img src="src/img/Img-Projeto-Portfolio.png" alt="Prévia do portfólio pessoal" loading="lazy">
+            <span class="image-index">01</span>
+            <span class="image-type">Portfólio</span>
           </div>
-
           <div class="project-content">
-            <span class="project-number">
-              Portfólio Social
-            </span>
-
-            <h2>Portfólio</h2>
-
+            <div class="project-meta">
+              <span class="project-category">Projeto pessoal</span>
+              <span class="project-status"><span></span> Publicado</span>
+            </div>
+            <h3>Portfólio pessoal</h3>
             <p>
-              Portfólio multi-página desenvolvido com foco em navegação fluida, transições entre páginas, responsividade
-              e sistema de carregamento otimizado.
+              Portfólio multipágina desenvolvido com foco em navegação fluida,
+              responsividade, transições entre páginas e apresentação dos meus projetos.
             </p>
-
-
-            <div class="technologies">
-
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JS</span>
-
+            <div class="technologies" aria-label="Tecnologias utilizadas">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
             </div>
-
-
             <div class="project-buttons">
-
-              <a href="https://ibrunoodev.netlify.app/" target="_blank" class="btn-project">
-                VER PROJETO
+              <a href="https://ibrunoodev.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-project">
+                Ver projeto <span aria-hidden="true">↗</span>
               </a>
-
-              <a href="https://github.com/IBrunooDev/Projeto-Portfolio" target="_blank" class="btn-github">
-                GITHUB
+              <a href="https://github.com/IBrunooDev/Projeto-Portfolio" target="_blank" rel="noopener noreferrer" class="btn-github">
+                Código-fonte
               </a>
-
             </div>
-
           </div>
-
         </article>
 
-
-        <!-- PROJETO 02 -->
-        <article class="project-card">
-
-          <div class="card-corner corner-top-left"></div>
-          <div class="card-corner corner-top-right"></div>
-
+        <!-- 02 — RIFA.GG -->
+        <article class="project-card project-card-featured reveal">
           <div class="project-image">
-
-            <img src="src/img/Img-Projeto-LinkTree.jpg" alt="Projeto 2">
-
-            <div class="image-overlay">
-              <span>02</span>
-            </div>
-
+            <img src="src/img/Img-Projeto-RIFA.GG.png" alt="Prévia da plataforma RIFA.GG" loading="lazy">
+            <span class="image-index">02</span>
+            <span class="image-type">Plataforma web</span>
           </div>
-
           <div class="project-content">
-
-            <span class="project-number">
-              LINKTREE
-            </span>
-
-            <h2>Social LinkTree</h2>
-
+            <div class="project-meta">
+              <span class="project-category">Sistema independente</span>
+              <span class="project-status"><span></span> Em desenvolvimento</span>
+            </div>
+            <h3>RIFA.GG</h3>
             <p>
-              Página de links responsiva para centralização de redes sociais e portfólio, com foco em interface moderna,
-              usabilidade e performance.
+              Plataforma para organizar rifas em um servidor MTA. Inclui gerenciamento
+              de rifas, números disponíveis, compras, participantes e resultados,
+              com foco em automação e organização.
             </p>
-
-            <div class="technologies">
-
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JS</span>
-
+            <div class="technologies" aria-label="Tecnologias utilizadas">
+              <span>Next.js</span><span>TypeScript</span><span>Supabase</span><span>PostgreSQL</span>
             </div>
-
             <div class="project-buttons">
-
-              <a href="https://iibrunoodev.netlify.app/" target="_blank" class="btn-project">
-                VER PROJETO
+              <a href="https://rifa-gg.vercel.app/admin" target="_blank" rel="noopener noreferrer" class="btn-project">
+                Ver projeto <span aria-hidden="true">↗</span>
               </a>
-
-              <a href="https://github.com/IBrunooDev/Projeto-LinkTree" target="_blank" class="btn-github">
-                GITHUB
+              <a href="https://github.com/IBrunooDev/Projeto-RIFA.GG" target="_blank" rel="noopener noreferrer" class="btn-github">
+                Código-fonte
               </a>
-
             </div>
-
           </div>
-
         </article>
 
-
-        <!-- PROJETO 03 -->
-        <article class="project-card">
-
-          <div class="card-corner corner-top-left"></div>
-          <div class="card-corner corner-top-right"></div>
-
+        <!-- 03 — BOT LGC WIN -->
+        <article class="project-card project-card-featured reveal">
           <div class="project-image">
-
-            <img src="src/img/Img-Projeto-SkyPage.jpg" alt="Projeto 3">
-
-            <div class="image-overlay">
-              <span>03</span>
-            </div>
-
+            <img src="src/img/Img-Projeto-LGCWIN.png" alt="Prévia do bot LGC WIN para Discord" loading="lazy">
+            <span class="image-index">03</span>
+            <span class="image-type">Bot para Discord</span>
           </div>
-
           <div class="project-content">
-
-            <span class="project-number">
-              Web Site
-            </span>
-
-            <h2>SkyPage Empresa</h2>
-
+            <div class="project-meta">
+              <span class="project-category">Automação</span>
+              <span class="project-status"><span></span> Projeto independente</span>
+            </div>
+            <h3>BOT LGC WIN</h3>
             <p>
-              Site corporativo desenvolvido com foco em estrutura responsiva, organização visual, usabilidade e
-              otimização de desempenho.
+              Bot para gerenciamento de rifas no Discord, com criação de rifas,
+              compras, reservas, cupons, aprovação de pagamentos, logs, auditoria
+              e divulgação automática de resultados.
             </p>
-
-            <div class="technologies">
-
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JS</span>
-
+            <div class="technologies" aria-label="Tecnologias utilizadas">
+              <span>Node.js</span><span>TypeScript</span><span>Discord.js</span><span>Supabase</span>
             </div>
-
             <div class="project-buttons">
-
-              <a href="https://skypagee.netlify.app/" target="_blank" class="btn-project">
-                VER PROJETO
+              <a href="https://github.com/IBrunooDev/Projeto-BOT" target="_blank" rel="noopener noreferrer" class="btn-project">
+                Ver no GitHub <span aria-hidden="true">↗</span>
               </a>
-
-              <a href="https://github.com/IBrunooDev/Projeto-SkyPage" target="_blank" class="btn-github">
-                GITHUB
-              </a>
-
             </div>
-
           </div>
-
         </article>
 
-        <!-- PROJETO 04 -->
-        <article class="project-card">
-
-          <div class="card-corner corner-top-left"></div>
-          <div class="card-corner corner-top-right"></div>
-
+        <!-- 04 — LINKTREE -->
+        <article class="project-card reveal">
           <div class="project-image">
-
-            <img src="src/img/Img-Projeto-Legacy.jpg" alt="Projeto 3">
-
-            <div class="image-overlay">
-              <span>04</span>
-            </div>
-
+            <img src="src/img/Img-Projeto-LinkTree.jpg" alt="Prévia da página Social LinkTree" loading="lazy">
+            <span class="image-index">04</span>
+            <span class="image-type">Redes sociais</span>
           </div>
-
           <div class="project-content">
-
-            <span class="project-number">
-              Landing Pages
-            </span>
-
-            <h2>Legacy RP MTA</h2>
-
-            <p>Landing page para o segmento de games (MTA), desenvolvida com foco em interface responsiva, experiência
-              do usuário e apresentação de funcionalidades e scripts.
+            <div class="project-meta">
+              <span class="project-category">Página responsiva</span>
+            </div>
+            <h3>Social LinkTree</h3>
+            <p>
+              Página para centralizar redes sociais e portfólio, com interface moderna,
+              navegação simples e foco na usabilidade.
             </p>
-
-            <div class="technologies">
-
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JS</span>
-
+            <div class="technologies" aria-label="Tecnologias utilizadas">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
             </div>
-
             <div class="project-buttons">
-
-              <a href="https://legacymta.netlify.app/" target="_blank" class="btn-project">
-                VER PROJETO
+              <a href="https://iibrunoodev.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-project">
+                Ver projeto <span aria-hidden="true">↗</span>
               </a>
-
-              <a href="https://github.com/IBrunooDev/Projeto-Legacy" target="_blank" class="btn-github">
-                GITHUB
+              <a href="https://github.com/IBrunooDev/Projeto-LinkTree" target="_blank" rel="noopener noreferrer" class="btn-github">
+                GitHub
               </a>
-
             </div>
-
           </div>
-
         </article>
 
-        <!-- PROJETO 05 -->
-        <article class="project-card">
-
-          <div class="card-corner corner-top-left"></div>
-          <div class="card-corner corner-top-right"></div>
-
+        <!-- 05 — LEGACY RP -->
+        <article class="project-card reveal">
           <div class="project-image">
-
-            <img src="src/img/Img-Projeto-Limpeza.jpg" alt="Projeto 3">
-
-            <div class="image-overlay">
-              <span>05</span>
-            </div>
-
+            <img src="src/img/Img-Projeto-Legacy.jpg" alt="Prévia da landing page Legacy RP MTA" loading="lazy">
+            <span class="image-index">05</span>
+            <span class="image-type">Games</span>
           </div>
-
           <div class="project-content">
-
-            <span class="project-number">
-              Landing Pages
-            </span>
-
-            <h2>Limpeza de Casa</h2>
-
+            <div class="project-meta">
+              <span class="project-category">Landing page</span>
+            </div>
+            <h3>Legacy RP MTA</h3>
             <p>
-              Landing page desenvolvida para uma empresa de limpeza, com foco em design responsivo, experiência do
-              usuário e funcionalidades interativas.
+              Landing page para uma comunidade de MTA, com interface responsiva
+              e apresentação de funcionalidades e scripts do servidor.
             </p>
-
-            <div class="technologies">
-
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JS</span>
-
+            <div class="technologies" aria-label="Tecnologias utilizadas">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
             </div>
-
             <div class="project-buttons">
-
-              <a href="https://limpezaa.netlify.app/" target="_blank" class="btn-project">
-                VER PROJETO
+              <a href="https://legacymta.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-project">
+                Ver projeto <span aria-hidden="true">↗</span>
               </a>
-
-              <a href="https://github.com/IBrunooDev/Projeto-Limpeza" target="_blank" class="btn-github">
-                GITHUB
+              <a href="https://github.com/IBrunooDev/Projeto-Legacy" target="_blank" rel="noopener noreferrer" class="btn-github">
+                GitHub
               </a>
-
             </div>
-
           </div>
-
         </article>
 
-        <!-- PROJETO 06 -->
-        <article class="project-card">
-
-          <div class="card-corner corner-top-left"></div>
-          <div class="card-corner corner-top-right"></div>
-
+        <!-- 06 — LIMPEZA DE CASA -->
+        <article class="project-card reveal">
           <div class="project-image">
-
-            <img src="src/img/Img-Projeto-F1Dev.jpg" alt="Projeto 3">
-
-            <div class="image-overlay">
-              <span>06</span>
-            </div>
-
+            <img src="src/img/Img-Projeto-Limpeza.jpg" alt="Prévia da landing page para empresa de limpeza" loading="lazy">
+            <span class="image-index">06</span>
+            <span class="image-type">Serviços</span>
           </div>
-
           <div class="project-content">
-
-            <span class="project-number">
-              Landing Pages
-            </span>
-
-            <h2>F1Dev</h2>
-
+            <div class="project-meta">
+              <span class="project-category">Landing page</span>
+            </div>
+            <h3>Limpeza de Casa</h3>
             <p>
-              Landing page desenvolvida para um campeonato de Fórmula 1, com foco em design responsivo, experiência do
-              usuário e funcionalidades interativas.
+              Landing page para uma empresa de limpeza, com design responsivo,
+              conteúdo organizado e funcionalidades interativas.
             </p>
-
-            <div class="technologies">
-
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JS</span>
-
+            <div class="technologies" aria-label="Tecnologias utilizadas">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
             </div>
-
             <div class="project-buttons">
-
-              <a href="https://f1dev.netlify.app/" target="_blank" class="btn-project">
-                VER PROJETO
+              <a href="https://limpezaa.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-project">
+                Ver projeto <span aria-hidden="true">↗</span>
               </a>
-
-              <a href="https://github.com/IBrunooDev/Projeto-F1" target="_blank" class="btn-github">
-                GITHUB
+              <a href="https://github.com/IBrunooDev/Projeto-Limpeza" target="_blank" rel="noopener noreferrer" class="btn-github">
+                GitHub
               </a>
-
             </div>
-
           </div>
-
         </article>
 
-        <!-- PROJETO 07 -->
-        <article class="project-card">
-
-          <div class="card-corner corner-top-left"></div>
-          <div class="card-corner corner-top-right"></div>
-
+        <!-- 07 — F1DEV -->
+        <article class="project-card reveal">
           <div class="project-image">
-
-            <img src="src/img/Img-Projeto-RIFA.GG.png" alt="Projeto 3">
-
-            <div class="image-overlay">
-              <span>07</span>
-            </div>
-
+            <img src="src/img/Img-Projeto-F1Dev.jpg" alt="Prévia do projeto F1Dev" loading="lazy">
+            <span class="image-index">07</span>
+            <span class="image-type">Automobilismo</span>
           </div>
-
           <div class="project-content">
-
-            <span class="project-number">
-              Site Completo
-            </span>
-
-            <h2>RIFA.GG</h2>
-
+            <div class="project-meta">
+              <span class="project-category">Landing page</span>
+            </div>
+            <h3>F1Dev</h3>
             <p>
-              O RIFA.GG é uma plataforma desenvolvida para GTA San Andreas, na plataforma MTA (Multi Theft Auto), criada
-              para automatizar e organizar o gerenciamento de rifas dentro do servidor.
-              O sistema permite criar e gerenciar rifas, controlar números disponíveis, registrar compras, acompanhar
-              participantes e divulgar resultados, proporcionando uma experiência mais prática, organizada e
-              automatizada para a comunidade.
-              Projeto focado em automação, organização e integração com o ecossistema do servidor.
+              Landing page para um campeonato de Fórmula 1, com foco em apresentação
+              visual, responsividade e funcionalidades interativas.
             </p>
-
-            <div class="technologies">
-
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-              <span>TypeScript</span>
-              <span>Next.js</span>
-              <span>PostgreSQL</span>
-              <span>Vercel</span>
-              <span>Supabase</span>
-              <span>AI</span>
-
+            <div class="technologies" aria-label="Tecnologias utilizadas">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
             </div>
-
             <div class="project-buttons">
-
-              <a href="https://rifa-gg.vercel.app/admin" target="_blank" class="btn-project">
-                VER PROJETO
+              <a href="https://f1dev.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-project">
+                Ver projeto <span aria-hidden="true">↗</span>
               </a>
-
-              <a href="https://github.com/IBrunooDev/Projeto-RIFA.GG" target="_blank" class="btn-github">
-                GITHUB
+              <a href="https://github.com/IBrunooDev/Projeto-F1" target="_blank" rel="noopener noreferrer" class="btn-github">
+                GitHub
               </a>
-
             </div>
-
           </div>
-
         </article>
 
-        <!-- PROJETO 08 -->
-        <article class="project-card">
-
-          <div class="card-corner corner-top-left"></div>
-          <div class="card-corner corner-top-right"></div>
-
+        <!-- 08 — SKYPAGE -->
+        <article class="project-card reveal">
           <div class="project-image">
-
-            <img src="src/img/Img-Projeto-LGCWIN.png" alt="Projeto 3">
-
-            <div class="image-overlay">
-              <span>08</span>
-            </div>
-
+            <img src="src/img/Img-Projeto-SkyPage.jpg" alt="Prévia do site corporativo SkyPage" loading="lazy">
+            <span class="image-index">08</span>
+            <span class="image-type">Site corporativo</span>
           </div>
-
           <div class="project-content">
-
-            <span class="project-number">
-              Bot Discord
-            </span>
-
-            <h2>BOT LGC WIN</h2>
-
+            <div class="project-meta">
+              <span class="project-category">Desenvolvimento web</span>
+            </div>
+            <h3>SkyPage Empresa</h3>
             <p>
-              BOT completo para gerenciamento de rifas no Discord.
-              O projeto foi desenvolvido para automatizar todo o processo de uma rifa.
-              Permite criar e gerenciar rifas de forma rápida e organizada.
-              Possui sistema de compras, reservas e controle de números disponíveis.
-              Também conta com cupons, verificações e aprovação de pagamentos.
-              Todas as ações importantes são registradas através de logs e auditoria.
-              O sistema possui controle de permissões e mecanismos de segurança.
-              Os resultados das rifas são divulgados automaticamente no Discord.
-              O projeto tem foco em segurança, organização, automação e experiência do usuário.
+              Site corporativo com estrutura responsiva, organização visual,
+              usabilidade e atenção ao desempenho em diferentes dispositivos.
             </p>
-
-            <div class="technologies">
-
-              <span>Node.js</span>
-              <span>TypeScript</span>
-              <span>Discord.js</span>
-              <span>Supabase</span>
-              <span>PostgreSQL</span>
-              <span>REST APIs</span>
-              <span>Supabase</span>
-              <span>AI</span>
-
+            <div class="technologies" aria-label="Tecnologias utilizadas">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
             </div>
-
             <div class="project-buttons">
-
-              <!-- <a href="https://github.com/IBrunooDev/Projeto-BOT" target="_blank" class="btn-project">
-                VER PROJETO
-              </a> -->
-
-              <a href="https://github.com/IBrunooDev/Projeto-BOT" target="_blank" class="btn-github">
-                GITHUB
+              <a href="https://skypagee.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-project">
+                Ver projeto <span aria-hidden="true">↗</span>
               </a>
-
+              <a href="https://github.com/IBrunooDev/Projeto-SkyPage" target="_blank" rel="noopener noreferrer" class="btn-github">
+                GitHub
+              </a>
             </div>
-
           </div>
-
         </article>
 
-        <!-- PROJETO 09 -->
-        <article class="project-card">
-
-          <div class="card-corner corner-top-left"></div>
-          <div class="card-corner corner-top-right"></div>
-
+        <!-- 09 — PEDIDO DE NAMORO -->
+        <article class="project-card reveal">
           <div class="project-image">
-
-            <img src="src/img/Img-Projeto-Love.png" alt="Projeto 3">
-
-            <div class="image-overlay">
-              <span>09</span>
-            </div>
-
+            <img src="src/img/Img-Projeto-Love.png" alt="Prévia do projeto interativo Pedido de Namoro" loading="lazy">
+            <span class="image-index">09</span>
+            <span class="image-type">Experiência interativa</span>
           </div>
-
           <div class="project-content">
-
-            <span class="project-number">
-              Landing Pages
-            </span>
-
-            <h2>Pedido de Namoro</h2>
-
+            <div class="project-meta">
+              <span class="project-category">Projeto criativo</span>
+            </div>
+            <h3>Pedido de Namoro</h3>
             <p>
-              Projeto Love é uma experiência web interativa e personalizada, criada para apresentar momentos
-              especiais de forma visual e envolvente.
-
-              O projeto conta com navegação entre telas, interações dinâmicas, animações, imagens personalizadas e
-              player de música.
-
-              Uma experiência simples, responsiva e pensada para tornar cada momento único.
+              Experiência web personalizada com navegação entre telas, animações,
+              imagens e player de música, criada para apresentar momentos especiais.
             </p>
-
-
-            <div class="technologies">
-
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-
+            <div class="technologies" aria-label="Tecnologias utilizadas">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
             </div>
-
             <div class="project-buttons">
-
-              <a href="https://projeto-lovee.netlify.app" target="_blank" class="btn-project">
-                VER PROJETO
+              <a href="https://projeto-lovee.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-project">
+                Ver projeto <span aria-hidden="true">↗</span>
               </a>
-
-              <a href="https://github.com/IBrunooDev/Projeto-Pedido" target="_blank" class="btn-github">
-                GITHUB
+              <a href="https://github.com/IBrunooDev/Projeto-Pedido" target="_blank" rel="noopener noreferrer" class="btn-github">
+                GitHub
               </a>
-
             </div>
-
           </div>
-
         </article>
 
       </div>
-
     </section>
 
-    <!--============================== -->
+    <!-- CTA FINAL -->
+    <section class="projects-cta reveal" aria-label="Contato e mais projetos">
+      <div class="cta-mark" aria-hidden="true">&lt;/&gt;</div>
+      <div class="cta-copy">
+        <p class="section-eyebrow">// PRÓXIMO PASSO</p>
+        <h2>Vamos construir algo <span>incrível?</span></h2>
+        <p>Estou sempre aprendendo, desenvolvendo novas ideias e aprimorando minhas habilidades.</p>
+      </div>
+      <a class="btn-primary" href="https://github.com/IBrunooDev" target="_blank" rel="noopener noreferrer">
+        Explorar GitHub <span aria-hidden="true">↗</span>
+      </a>
+    </section>
 
-  </main>
-  <div id="project-modal" class="project-modal" role="dialog" aria-modal="true" aria-label="Projeto">
+  </section>
+</main>
+
+
+  <!-- Modal de projeto -->
+  
+  
     <div class="project-modal-dialog">
       <button id="project-modal-close" class="project-modal-close" type="button" aria-label="Fechar">
 

@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="src/css/certificates.css">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="src/css/redesign.css">
+  <link rel="stylesheet" href="src/css/certificado.css">
 </head>
 
 <body data-page="certificados">
@@ -36,17 +37,100 @@
     </div>
   </header>
 
-  <main class="page">
-    <section class="container">
-      <div class="page-intro reveal">
-        <p class="page-kicker">Certificados</p>
-        <h1>Formação e cursos</h1>
-        <p class="page-lead">Certificados disponíveis para pré-visualização em PNG, visualização ampliada e download em PDF.</p>
+<main class="page certificates-page">
+  <section class="container">
+
+    <!-- INTRODUÇÃO -->
+    <header class="certificates-intro reveal">
+      <div class="certificates-intro-copy">
+        <p class="page-kicker">
+          <span class="kicker-dot" aria-hidden="true"></span>
+          Formação & aprendizado
+        </p>
+
+        <h1>Conhecimento que vira <span>prática.</span></h1>
+
+        <p class="page-lead">
+          Certificados e cursos que fazem parte da minha jornada na tecnologia,
+          reunindo aprendizados e conhecimentos que venho desenvolvendo ao longo
+          da minha formação.
+        </p>
+
+        <div class="certificates-actions">
+          <a class="cert-btn cert-btn-primary" href="#certificados">
+            Explorar certificados <span aria-hidden="true">↓</span>
+          </a>
+          <a class="cert-btn cert-btn-secondary" href="https://github.com/IBrunooDev"
+             target="_blank" rel="noopener noreferrer">
+            Meu GitHub <span aria-hidden="true">↗</span>
+          </a>
+        </div>
       </div>
-      <div id="cert-toolbar" class="cert-toolbar reveal"></div>
-      <div id="cert-grid" class="cert-grid"></div>
+
+      <aside class="certificates-overview" aria-label="Resumo dos certificados">
+        <div class="overview-top">
+          <span class="overview-indicator" aria-hidden="true"></span>
+          <span>PAINEL DE APRENDIZADO</span>
+          <span class="overview-status">ATIVO</span>
+        </div>
+
+        <div class="overview-number">
+          <strong>01</strong>
+          <span>jornada de<br>aprendizado contínuo</span>
+        </div>
+
+        <div class="overview-divider"></div>
+
+        <div class="overview-detail">
+          <span class="detail-icon" aria-hidden="true">⌘</span>
+          <div>
+            <strong>Desenvolvimento Web</strong>
+            <span>Front-End e tecnologias web</span>
+          </div>
+        </div>
+
+        <div class="overview-detail">
+          <span class="detail-icon detail-icon-purple" aria-hidden="true">✳</span>
+          <div>
+            <strong>Aprendizado contínuo</strong>
+            <span>Cursos, prática e evolução profissional</span>
+          </div>
+        </div>
+      </aside>
+    </header>
+
+    <!-- LISTA DE CERTIFICADOS -->
+    <section class="certificates-section" id="certificados" aria-labelledby="certificates-heading">
+      <div class="certificates-section-heading reveal">
+        <div>
+          <p class="section-eyebrow">// FORMAÇÃO</p>
+          <h2 id="certificates-heading">Meus certificados<span>.</span></h2>
+          <p>
+            Consulte os certificados, visualize as imagens em tamanho ampliado
+            ou faça o download dos documentos em PDF.
+          </p>
+        </div>
+
+        <div class="certificates-label">
+          <span class="certificates-label-dot" aria-hidden="true"></span>
+          <span>Acervo de certificados</span>
+        </div>
+      </div>
+
+      <!-- Mantidos os IDs para compatibilidade com o JavaScript existente -->
+      <div id="cert-toolbar" class="cert-toolbar reveal" aria-label="Filtros de certificados"></div>
+      <div id="cert-grid" class="cert-grid" aria-live="polite"></div>
+
+      <noscript>
+        <p class="certificates-empty">
+          Ative o JavaScript no navegador para carregar os certificados.
+        </p>
+      </noscript>
     </section>
-  </main>
+
+  </section>
+</main>
+
 
   <div id="cert-modal" class="cert-modal" role="dialog" aria-modal="true" aria-label="Certificado">
     <div class="cert-modal-dialog">

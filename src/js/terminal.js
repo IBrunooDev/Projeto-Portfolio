@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
     certificados: "certificados.html",
     certificado: "certificados.html",
     contato: "contato.html",
-    frase: "frase.html",
   };
 
   const print = (html, className = "") => {
